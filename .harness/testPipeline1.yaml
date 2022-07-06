@@ -1,0 +1,17 @@
+template:
+    name: test
+    identifier: test
+    versionLabel: v1432
+    type: Step
+    projectIdentifier: gitSync
+    orgIdentifier: default
+    tags: {}
+    spec:
+        type: K8sApply
+        timeout: 10m
+        spec:
+            filePaths:
+                - da
+            skipDryRun: false
+            skipSteadyStateCheck: false
+            overrides: []
