@@ -1,0 +1,21 @@
+template:
+    name: New Step Template Name
+    identifier: new_step_template_name
+    versionLabel: v1
+    type: Step
+    projectIdentifier: adithya_old_gitSync
+    orgIdentifier: deafult
+    tags: {}
+    spec:
+        type: ShellScript
+        timeout: 1m
+        spec:
+            shell: Bash
+            onDelegate: true
+            source:
+                type: Inline
+                spec:
+                    script: echo "hi"
+            environmentVariables: []
+            outputVariables: []
+            executionTarget: {}
