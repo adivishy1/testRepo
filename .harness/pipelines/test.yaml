@@ -51,7 +51,7 @@ pipeline:
                   userGroups:
                       - account.testUserGroup2
                   recipients: []
-          enabled: true
+          enabled: false
         - name: email
           identifier: email
           pipelineEvents:
@@ -80,11 +80,10 @@ pipeline:
           notificationMethod:
               type: MsTeams
               spec:
-                  userGroups:
-                      - account.testUserGroup2
+                  userGroups: []
                   msTeamKeys:
-                      - https://www.google.com/
-          enabled: false
+                      - https://harnessinc.webhook.office.com/webhookb2/24f650b7-95cd-43d5-90c8-f08baf445476@b229b2bb-5f33-4d22-bce0-730f6474e906/IncomingWebhook/267d7fa6dc72431e8e6dbfd0e8a30445/1cf4605b-aae0-49bb-bf31-d274d5741bd9
+          enabled: true
         - name: groupNoti
           identifier: groupNoti
           pipelineEvents:
