@@ -1,0 +1,31 @@
+pipeline:
+    name: test inder
+    identifier: test_inder_2
+    projectIdentifier: mohit_git_simplification_project
+    orgIdentifier: aaaaaaaaaaaaaaaaDeepakOrg
+    tags: {}
+    stages:
+        - stage:
+              name: tet
+              identifier: tet
+              description: ""
+              type: Approval
+              spec:
+                  execution:
+                      steps:
+                          - step:
+                                name: test
+                                identifier: test
+                                type: HarnessApproval
+                                timeout: 1d
+                                spec:
+                                    approvalMessage: |-
+                                        Please review the following information
+                                        and approve the pipeline progression
+                                    includePipelineExecutionHistory: true
+                                    approvers:
+                                        minimumCount: 1
+                                        disallowPipelineExecutor: false
+                                        userGroups: <+input>
+                                    approverInputs: []
+              tags: {}
