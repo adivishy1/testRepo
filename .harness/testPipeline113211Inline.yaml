@@ -1,0 +1,16 @@
+template:
+    name: test
+    identifier: test
+    versionLabel: v1341221355
+    type: Step
+    orgIdentifier: default
+    tags: {}
+    spec:
+        type: K8sApply
+        timeout: 10m
+        spec:
+            filePaths:
+                - da
+            skipDryRun: false
+            skipSteadyStateCheck: false
+            overrides: []
