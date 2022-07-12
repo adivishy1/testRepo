@@ -1,0 +1,31 @@
+pipeline:
+    name: testRemoteBugFix
+    identifier: testRemoteBugFix
+    projectIdentifier: mohit_git_simplification_project
+    orgIdentifier: aaaaaaaaaaaaaaaaDeepakOrg
+    tags: {}
+    stages:
+        - stage:
+              name: test
+              identifier: test
+              description: ""
+              type: Approval
+              spec:
+                  execution:
+                      steps:
+                          - step:
+                                type: ShellScript
+                                name: test
+                                identifier: test
+                                spec:
+                                    shell: Bash
+                                    onDelegate: true
+                                    source:
+                                        type: Inline
+                                        spec:
+                                            script: echo hi
+                                    environmentVariables: []
+                                    outputVariables: []
+                                    executionTarget: {}
+                                timeout: 1m
+              tags: {}
