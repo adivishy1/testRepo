@@ -4,6 +4,7 @@ pipeline:
     projectIdentifier: Chetan_New_Git_Sync
     orgIdentifier: default
     tags: {}
+    testing: one
     stages:
         - stage:
               name: s1
