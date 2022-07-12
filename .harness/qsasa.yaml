@@ -10,6 +10,7 @@ pipeline:
               identifier: s1
               description: ""
               type: Approval
+              employee: bhoopesh
               spec:
                   execution:
                       steps:
@@ -29,3 +30,4 @@ pipeline:
                                         userGroups: <+input>
                                     approverInputs: []
               tags: {}
+    description: ab
