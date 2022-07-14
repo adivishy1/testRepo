@@ -1,0 +1,17 @@
+template:
+    name: test
+    identifier: test
+    versionLabel: v13400087565
+    type: Step
+    orgIdentifier: default
+    projectIdentifier : testAdithyaNewGitX
+    tags: {}
+    spec:
+        type: K8sApply
+        timeout: 10m
+        spec:
+            filePaths:
+                - da
+            skipDryRun: false
+            skipSteadyStateCheck: false
+            overrides: []
