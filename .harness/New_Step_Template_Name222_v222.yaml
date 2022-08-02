@@ -1,0 +1,21 @@
+template:
+    name: New Step Template Name222
+    identifier: New_Step_Template_Name222
+    versionLabel: v222
+    type: Step
+    projectIdentifier: TestAdithya
+    orgIdentifier: default
+    tags: {}
+    spec:
+        type: ShellScript
+        timeout: 10m
+        spec:
+            shell: Bash
+            onDelegate: true
+            source:
+                type: Inline
+                spec:
+                    script: echo "hiii"
+            environmentVariables: []
+            outputVariables: []
+            executionTarget: {}
