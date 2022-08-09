@@ -39,3 +39,20 @@ pipeline:
                       spec:
                         approvers:
                           userGroups: <+input>
+    - stage:
+        name: r2
+        identifier: r2
+        template:
+          templateRef: PipelineUseStageRemoteRepo2
+          versionLabel: v1
+          templateInputs:
+            type: Approval
+            spec:
+              execution:
+                steps:
+                  - step:
+                      identifier: r1
+                      type: HarnessApproval
+                      spec:
+                        approvers:
+                          userGroups: <+input>
