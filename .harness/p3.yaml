@@ -1,0 +1,24 @@
+pipeline:
+  name: p3
+  identifier: p3
+  projectIdentifier: GitX_Remote
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: sdfg
+        identifier: sdfg
+        template:
+          templateRef: PipelineUseStageRemote
+          versionLabel: v1
+          templateInputs:
+            type: Approval
+            spec:
+              execution:
+                steps:
+                  - step:
+                      identifier: r1
+                      type: HarnessApproval
+                      spec:
+                        approvers:
+                          userGroups: <+input>
