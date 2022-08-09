@@ -1,0 +1,21 @@
+template:
+    name: New Remote Step Template5
+    identifier: new_remote_step_template5
+    versionLabel: v1
+    type: Step
+    projectIdentifier: GitX_Remote
+    orgIdentifier: default
+    tags: {}
+    spec:
+        type: ShellScript
+        timeout: 1m
+        spec:
+            shell: Bash
+            onDelegate: true
+            source:
+                type: Inline
+                spec:
+                    script: echo "hi"
+            environmentVariables: []
+            outputVariables: []
+            executionTarget: {}
