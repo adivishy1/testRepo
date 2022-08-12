@@ -6,23 +6,6 @@ pipeline:
   tags: {}
   stages:
     - stage:
-        name: s1
-        identifier: s1
-        template:
-          templateRef: stages1T1
-          versionLabel: v2
-          templateInputs:
-            type: Approval
-            spec:
-              execution:
-                steps:
-                  - step:
-                      identifier: stage
-                      type: HarnessApproval
-                      spec:
-                        approvers:
-                          userGroups: <+input>
-    - stage:
         name: s2
         identifier: s2
         template:
