@@ -23,7 +23,7 @@ template:
                               approvalMessage: Approved
                               includePipelineExecutionHistory: true
                               approvers:
-                                  minimumCount: 1
+                                  minimumCount: 0
                                   disallowPipelineExecutor: false
                                   userGroups: <+input>
                               approverInputs: []
