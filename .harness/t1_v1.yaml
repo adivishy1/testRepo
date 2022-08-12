@@ -1,0 +1,24 @@
+template:
+    name: t1
+    identifier: t1
+    versionLabel: v1
+    type: Step
+    projectIdentifier: GitX_Remote
+    orgIdentifier: default
+    tags: {}
+    connectorRef: ""
+    storeType: INLINE
+    filePath: ""
+    spec:
+        timeout: 10m
+        type: ShellScript
+        spec:
+            shell: Bash
+            onDelegate: true
+            source:
+                type: Inline
+                spec:
+                    script: echo "hi"
+            environmentVariables: []
+            outputVariables: []
+            executionTarget: {}
