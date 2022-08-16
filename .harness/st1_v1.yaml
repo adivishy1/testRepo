@@ -15,7 +15,7 @@ template:
       source:
         type: Inline
         spec:
-          script: echo 8
+          script: echo 81
       environmentVariables: []
       outputVariables: []
       executionTarget: {}
