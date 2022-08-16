@@ -1,0 +1,21 @@
+template:
+  name: st1
+  identifier: st1
+  versionLabel: v1
+  type: Step
+  projectIdentifier: GitX_Remote
+  orgIdentifier: default
+  tags: {}
+  spec:
+    timeout: 10m
+    type: ShellScript
+    spec:
+      shell: Bash
+      onDelegate: true
+      source:
+        type: Inline
+        spec:
+          script: echo 8
+      environmentVariables: []
+      outputVariables: []
+      executionTarget: {}
