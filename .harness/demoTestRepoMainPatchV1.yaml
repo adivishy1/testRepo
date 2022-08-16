@@ -1,0 +1,29 @@
+template:
+  name: demoTestRepoMainPatch
+  identifier: demoTestRepoMainPatch
+  type: Stage
+  projectIdentifier: GitX_Remote
+  orgIdentifier: default
+  tags: {}
+  connectorRef: ""
+  storeType: INLINE
+  filePath: ""
+  spec:
+    type: Approval
+    spec:
+      execution:
+        steps:
+          - step:
+              name: stage
+              identifier: stage
+              type: HarnessApproval
+              timeout: 1d
+              spec:
+                approvalMessage: Approved for demo repo testRepo and branch main-patch
+                includePipelineExecutionHistory: true
+                approvers:
+                  minimumCount: 1
+                  disallowPipelineExecutor: false
+                  userGroups: <+input>
+                approverInputs: []
+  versionLabel: v2
