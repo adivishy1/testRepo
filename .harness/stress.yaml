@@ -1,0 +1,21 @@
+template:
+    name: StressRemote1
+    identifier: StressRemote1
+    versionLabel: v1
+    type: Step
+    projectIdentifier: testAdithyaNewGitX
+    orgIdentifier: default
+    tags: {}
+    spec:
+        type: ShellScript
+        timeout: 1m
+        spec:
+            shell: Bash
+            onDelegate: true
+            source:
+                type: Inline
+                spec:
+                    script: echo "hi"
+            environmentVariables: []
+            outputVariables: []
+            executionTarget: {}
