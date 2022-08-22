@@ -1,0 +1,21 @@
+template:
+  name: oldGitSyncRemote
+  identifier: oldGitSyncRemote
+  type: Step
+  projectIdentifier: TestAdithya
+  orgIdentifier: default
+  tags: {}
+  spec:
+    type: ShellScript
+    timeout: 1m
+    spec:
+      shell: Bash
+      onDelegate: true
+      source:
+        type: Inline
+        spec:
+          script: echo "hdfhgdi"
+      environmentVariables: []
+      outputVariables: []
+      executionTarget: {}
+  versionLabel: v2
