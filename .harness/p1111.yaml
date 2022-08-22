@@ -1,0 +1,22 @@
+pipeline:
+  name: p1111
+  identifier: p1111
+  projectIdentifier: test_new_gitX
+  orgIdentifier: default1
+  tags: {}
+  stages:
+    - stage:
+        name: s1
+        identifier: s1
+        description: ""
+        type: Approval
+        spec:
+          execution:
+            steps:
+              - step:
+                  name: fefe
+                  identifier: fefe
+                  template:
+                    templateRef: New_Step_Template_Nameeee
+                    versionLabel: vewfvwe
+        tags: {}
