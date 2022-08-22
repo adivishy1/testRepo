@@ -1,0 +1,23 @@
+connector:
+  name: adithyaGitConnector
+  identifier: adithyaGitConnector
+  description: ""
+  orgIdentifier: default
+  projectIdentifier: testOldGitSync
+  type: Github
+  spec:
+    url: https://github.com/adivishy1/
+    validationRepo: testRepo
+    authentication:
+      type: Http
+      spec:
+        type: UsernameToken
+        spec:
+          username: adivishy1
+          tokenRef: adithyaGitConnector
+    apiAccess:
+      type: Token
+      spec:
+        tokenRef: adithyaGitConnector
+    executeOnDelegate: false
+    type: Account
