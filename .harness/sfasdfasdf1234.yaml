@@ -1,0 +1,21 @@
+template:
+    name: sfasdfasdf1234
+    identifier: sfasdfasdf1234
+    versionLabel: v1
+    type: Step
+    projectIdentifier: newGitxTest
+    orgIdentifier: default
+    tags: {}
+    spec:
+        type: ShellScript
+        timeout: 1m
+        spec:
+            shell: Bash
+            onDelegate: true
+            source:
+                type: Inline
+                spec:
+                    script: echo "hi"
+            environmentVariables: []
+            outputVariables: []
+            executionTarget: {}
