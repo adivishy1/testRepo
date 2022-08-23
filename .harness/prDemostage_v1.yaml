@@ -1,0 +1,26 @@
+template:
+  name: prDemostage
+  identifier: prDemostage
+  versionLabel: v1
+  type: Stage
+  projectIdentifier: gitX_demo
+  orgIdentifier: default
+  tags: {}
+  spec:
+    type: Approval
+    spec:
+      execution:
+        steps:
+          - step:
+              name: approval
+              identifier: approval
+              type: HarnessApproval
+              timeout: 1d
+              spec:
+                approvalMessage: Approved from prDemostage_v1
+                includePipelineExecutionHistory: true
+                approvers:
+                  minimumCount: 1
+                  disallowPipelineExecutor: false
+                  userGroups: <+input>
+                approverInputs: []
