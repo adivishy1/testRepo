@@ -1,0 +1,26 @@
+template:
+  name: demoMainPatch
+  identifier: demoMainPatch
+  versionLabel: v1
+  type: Stage
+  projectIdentifier: gitX_demo
+  orgIdentifier: default
+  tags: {}
+  spec:
+    type: Approval
+    spec:
+      execution:
+        steps:
+          - step:
+              name: adfae
+              identifier: adfae
+              type: HarnessApproval
+              timeout: 1d
+              spec:
+                approvalMessage: demo main patch template
+                includePipelineExecutionHistory: true
+                approvers:
+                  minimumCount: 1
+                  disallowPipelineExecutor: false
+                  userGroups: <+input>
+                approverInputs: []
