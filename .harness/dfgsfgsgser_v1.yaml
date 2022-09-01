@@ -1,0 +1,19 @@
+template:
+  name: dfgsfgsgser
+  identifier: dfgsfgsgser
+  versionLabel: v1
+  type: Stage
+  projectIdentifier: GitX_Remote
+  orgIdentifier: default
+  tags: {}
+  spec:
+    type: Approval
+    spec:
+      execution:
+        steps:
+          - step:
+              name: s2
+              identifier: s2
+              template:
+                templateRef: asdfgadsgdfgfsdg
+                versionLabel: v1
