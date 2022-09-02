@@ -1,0 +1,19 @@
+template:
+  name: stageTry2Sept2
+  identifier: stageTry2Sept2
+  versionLabel: v1
+  type: Stage
+  projectIdentifier: GitX_Remote
+  orgIdentifier: default
+  tags: {}
+  spec:
+    type: Approval
+    spec:
+      execution:
+        steps:
+          - step:
+              name: fdgds
+              identifier: fdgds
+              template:
+                templateRef: stepRemoteSept2
+                versionLabel: v1
