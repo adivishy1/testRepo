@@ -1,0 +1,19 @@
+template:
+  name: newOrgConnectorTemplate
+  identifier: newOrgConnectorTemplate
+  versionLabel: v1
+  type: Step
+  orgIdentifier: newOrg
+  tags: {}
+  spec:
+    timeout: 10m
+    type: ShellScript
+    spec:
+      shell: Bash
+      onDelegate: true
+      source:
+        type: Inline
+        spec:
+          script: echo "hi"
+      environmentVariables: []
+      outputVariables: []
