@@ -1,0 +1,19 @@
+template:
+  name: stageUsingStepSept2
+  identifier: stageUsingStepSept2
+  versionLabel: v1
+  type: Stage
+  projectIdentifier: GitX_Remote
+  orgIdentifier: default
+  tags: {}
+  spec:
+    type: Approval
+    spec:
+      execution:
+        steps:
+          - step:
+              name: stepRemoteSept2
+              identifier: a241f7a2-b084-5841-9af5-2fee72a2b163
+              template:
+                templateRef: stepRemoteSept2
+                versionLabel: v1
