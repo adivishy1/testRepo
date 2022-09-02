@@ -1,0 +1,17 @@
+template:
+  name: sdfcasfgaewgqwegwg
+  identifier: sdfcasfgaewgqwegwg
+  versionLabel: wefaefaewfwa
+  type: Step
+  projectIdentifier: GitX_Remote
+  orgIdentifier: default
+  tags: {}
+  spec:
+    timeout: 10m
+    type: K8sApply
+    spec:
+      filePaths: <+input>
+      skipDryRun: <+input>
+      skipSteadyStateCheck: <+input>
+      skipRendering: <+input>
+      overrides: []
