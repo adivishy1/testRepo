@@ -1,0 +1,26 @@
+template:
+  name: sept5StageRemote2
+  identifier: sept5StageRemote2
+  versionLabel: v1
+  type: Stage
+  projectIdentifier: GitX_Remote
+  orgIdentifier: default
+  tags: {}
+  spec:
+    type: Approval
+    spec:
+      execution:
+        steps:
+          - step:
+              name: fwefawef
+              identifier: fwefawef
+              type: HarnessApproval
+              timeout: 1d
+              spec:
+                approvalMessage: approval from stage2
+                includePipelineExecutionHistory: true
+                approvers:
+                  minimumCount: 1
+                  disallowPipelineExecutor: false
+                  userGroups: <+input>
+                approverInputs: []
