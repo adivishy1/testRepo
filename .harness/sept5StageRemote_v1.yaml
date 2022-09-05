@@ -17,7 +17,7 @@ template:
               type: HarnessApproval
               timeout: 1d
               spec:
-                approvalMessage: approval updated
+                approvalMessage: approval updated update 2
                 includePipelineExecutionHistory: true
                 approvers:
                   minimumCount: 1
