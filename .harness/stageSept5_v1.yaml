@@ -1,0 +1,19 @@
+template:
+  name: stageSept5
+  identifier: stageSept5
+  versionLabel: v1
+  type: Stage
+  projectIdentifier: GitX_Remote
+  orgIdentifier: default
+  tags: {}
+  spec:
+    type: Approval
+    spec:
+      execution:
+        steps:
+          - step:
+              name: fge
+              identifier: fge
+              template:
+                templateRef: stepRepo2Sept5
+                versionLabel: v1
