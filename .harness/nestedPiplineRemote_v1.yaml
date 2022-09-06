@@ -1,0 +1,16 @@
+template:
+  name: nestedPiplineRemote
+  identifier: nestedPiplineRemote
+  versionLabel: v1
+  type: Pipeline
+  projectIdentifier: templateGitXDemo
+  orgIdentifier: default
+  tags: {}
+  spec:
+    stages:
+      - stage:
+          name: s1
+          identifier: s1
+          template:
+            templateRef: stageNestedRemote
+            versionLabel: v1
