@@ -1,0 +1,17 @@
+template:
+  name: accountSept6
+  identifier: accountSept6
+  versionLabel: v1
+  type: Step
+  tags: {}
+  spec:
+    type: HarnessApproval
+    timeout: 1d
+    spec:
+      approvalMessage: account level harness approval
+      includePipelineExecutionHistory: true
+      approvers:
+        userGroups: <+input>
+        minimumCount: 1
+        disallowPipelineExecutor: false
+      approverInputs: []
