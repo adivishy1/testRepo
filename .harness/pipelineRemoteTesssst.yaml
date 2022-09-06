@@ -1,0 +1,22 @@
+pipeline:
+  name: pipelineRemoteTesssst
+  identifier: pipelineRemoteTesssst
+  projectIdentifier: templateGitXDemo
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: s1
+        identifier: s1
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  name: s11
+                  identifier: s11
+                  template:
+                    templateRef: stepppRemote
+                    versionLabel: v1
+        tags: {}
