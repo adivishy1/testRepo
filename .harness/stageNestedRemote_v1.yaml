@@ -1,0 +1,19 @@
+template:
+  name: stageNestedRemote
+  identifier: stageNestedRemote
+  versionLabel: v1
+  type: Stage
+  projectIdentifier: templateGitXDemo
+  orgIdentifier: default
+  tags: {}
+  spec:
+    type: Custom
+    spec:
+      execution:
+        steps:
+          - step:
+              name: s1
+              identifier: s1
+              template:
+                templateRef: step1
+                versionLabel: v1
