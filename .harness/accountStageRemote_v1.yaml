@@ -1,0 +1,24 @@
+template:
+  name: accountStageRemote
+  identifier: accountStageRemote
+  versionLabel: v1
+  type: Stage
+  tags: {}
+  spec:
+    type: Approval
+    spec:
+      execution:
+        steps:
+          - step:
+              name: adasfsf
+              identifier: adasfsf
+              type: HarnessApproval
+              timeout: 1d
+              spec:
+                approvalMessage: Account remote template approval
+                includePipelineExecutionHistory: true
+                approvers:
+                  minimumCount: 1
+                  disallowPipelineExecutor: false
+                  userGroups: <+input>
+                approverInputs: []
