@@ -1,0 +1,9 @@
+pipeline:
+  name: templatePipeline
+  identifier: templatePipeline
+  template:
+    templateRef: nestedPiplineRemote
+    versionLabel: v1
+  tags: {}
+  projectIdentifier: templateGitXDemo
+  orgIdentifier: default
