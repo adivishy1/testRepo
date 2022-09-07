@@ -1,0 +1,19 @@
+template:
+  name: sept7Stage
+  identifier: sept7Stage
+  versionLabel: v1
+  type: Stage
+  projectIdentifier: demo
+  orgIdentifier: default
+  tags: {}
+  spec:
+    type: Custom
+    spec:
+      execution:
+        steps:
+          - step:
+              name: s1
+              identifier: s1
+              template:
+                templateRef: sept7Test
+                versionLabel: v1
