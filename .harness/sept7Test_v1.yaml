@@ -1,0 +1,20 @@
+template:
+  name: sept7Test
+  identifier: sept7Test
+  versionLabel: v1
+  type: Step
+  projectIdentifier: demo
+  orgIdentifier: default
+  tags: {}
+  spec:
+    timeout: 10m
+    type: ShellScript
+    spec:
+      shell: Bash
+      onDelegate: true
+      source:
+        type: Inline
+        spec:
+          script: echo "testRepo main "
+      environmentVariables: []
+      outputVariables: []
