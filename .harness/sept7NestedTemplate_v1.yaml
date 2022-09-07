@@ -1,0 +1,19 @@
+template:
+  name: sept7NestedTemplate
+  identifier: sept7NestedTemplate
+  versionLabel: v1
+  type: Stage
+  projectIdentifier: demo_gitX
+  orgIdentifier: default
+  tags: {}
+  spec:
+    type: Custom
+    spec:
+      execution:
+        steps:
+          - step:
+              name: s1
+              identifier: s1
+              template:
+                templateRef: sept7StepRemoteMain
+                versionLabel: v1
