@@ -15,6 +15,6 @@ template:
       source:
         type: Inline
         spec:
-          script: echo "hi"
+          script: echo "hiosdks"
       environmentVariables: []
       outputVariables: []
