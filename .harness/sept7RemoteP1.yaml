@@ -1,0 +1,13 @@
+pipeline:
+  name: sept7RemoteP1
+  identifier: sept7RemoteP1
+  projectIdentifier: demo
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: s1
+        identifier: s1
+        template:
+          templateRef: sept7Stage
+          versionLabel: v1
