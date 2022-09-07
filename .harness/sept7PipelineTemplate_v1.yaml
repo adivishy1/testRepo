@@ -1,0 +1,16 @@
+template:
+  name: sept7PipelineTemplate
+  identifier: sept7PipelineTemplate
+  versionLabel: v1
+  type: Pipeline
+  projectIdentifier: demo_gitX
+  orgIdentifier: default
+  tags: {}
+  spec:
+    stages:
+      - stage:
+          name: s1
+          identifier: s1
+          template:
+            templateRef: sept7NestedTemplate
+            versionLabel: v1
