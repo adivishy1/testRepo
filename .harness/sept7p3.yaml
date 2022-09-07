@@ -1,0 +1,9 @@
+pipeline:
+  name: sept7p3
+  identifier: sept7p3
+  template:
+    templateRef: sept7PipelineTemplate
+    versionLabel: v1
+  tags: {}
+  projectIdentifier: demo_gitX
+  orgIdentifier: default
