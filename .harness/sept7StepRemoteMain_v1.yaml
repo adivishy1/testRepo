@@ -1,0 +1,20 @@
+template:
+  name: sept7StepRemoteMain
+  identifier: sept7StepRemoteMain
+  versionLabel: v1
+  type: Step
+  projectIdentifier: demo_gitX
+  orgIdentifier: default
+  tags: {}
+  spec:
+    timeout: 10m
+    type: ShellScript
+    spec:
+      shell: Bash
+      onDelegate: true
+      source:
+        type: Inline
+        spec:
+          script: echo "hi"
+      environmentVariables: []
+      outputVariables: []
