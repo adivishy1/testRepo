@@ -1,0 +1,26 @@
+template:
+  name: sept7StageMainPatch
+  identifier: sept7StageMainPatch
+  versionLabel: v1
+  type: Stage
+  projectIdentifier: demo_gitX
+  orgIdentifier: default
+  tags: {}
+  spec:
+    type: Approval
+    spec:
+      execution:
+        steps:
+          - step:
+              name: main patch approval
+              identifier: main_patch_approval
+              type: HarnessApproval
+              timeout: 1d
+              spec:
+                approvalMessage: main patch stage template
+                includePipelineExecutionHistory: true
+                approvers:
+                  minimumCount: 1
+                  disallowPipelineExecutor: false
+                  userGroups: <+input>
+                approverInputs: []
