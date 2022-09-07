@@ -15,6 +15,6 @@ template:
       source:
         type: Inline
         spec:
-          script: echo "hi"
+          script: echo "testRepo main"
       environmentVariables: []
       outputVariables: []
