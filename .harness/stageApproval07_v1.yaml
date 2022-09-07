@@ -1,0 +1,26 @@
+template:
+  name: stageApproval07
+  identifier: stageApproval07
+  versionLabel: v1
+  type: Stage
+  projectIdentifier: demo
+  orgIdentifier: default
+  tags: {}
+  spec:
+    type: Approval
+    spec:
+      execution:
+        steps:
+          - step:
+              name: approval
+              identifier: approval
+              type: HarnessApproval
+              timeout: 1d
+              spec:
+                approvalMessage: testRepo main-patch approval
+                includePipelineExecutionHistory: true
+                approvers:
+                  minimumCount: 1
+                  disallowPipelineExecutor: false
+                  userGroups: <+input>
+                approverInputs: []
