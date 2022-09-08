@@ -1,0 +1,28 @@
+template:
+  name: demoTemplatePipeline08
+  identifier: demoTemplatePipeline08
+  versionLabel: v1
+  type: Pipeline
+  projectIdentifier: demo_gitX
+  orgIdentifier: default
+  tags: {}
+  spec:
+    stages:
+      - stage:
+          name: stage1
+          identifier: stage1
+          template:
+            templateRef: stageTemplateDemo08MAin
+            versionLabel: v1
+            templateInputs:
+              type: Approval
+              spec:
+                execution:
+                  steps:
+                    - step:
+                        identifier: stage_approval
+                        type: HarnessApproval
+                        spec:
+                          approvers:
+                            minimumCount: <+input>
+                            userGroups: <+input>
