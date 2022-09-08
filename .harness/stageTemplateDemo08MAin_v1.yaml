@@ -20,7 +20,7 @@ template:
                 approvalMessage: approval from stage template testRepo main
                 includePipelineExecutionHistory: true
                 approvers:
-                  minimumCount: 1
+                  minimumCount: <+input>
                   disallowPipelineExecutor: false
                   userGroups: <+input>
                 approverInputs: []
