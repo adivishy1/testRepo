@@ -1,0 +1,26 @@
+template:
+  name: sept7StageMain
+  identifier: sept7StageMain
+  type: Stage
+  projectIdentifier: demo_gitX
+  orgIdentifier: default
+  tags: {}
+  spec:
+    type: Approval
+    spec:
+      execution:
+        steps:
+          - step:
+              name: main stage
+              identifier: main_stage
+              type: HarnessApproval
+              timeout: 1d
+              spec:
+                approvalMessage: test repo remote stage template main branch
+                includePipelineExecutionHistory: true
+                approvers:
+                  minimumCount: 1
+                  disallowPipelineExecutor: false
+                  userGroups: <+input>
+                approverInputs: []
+  versionLabel: v2
