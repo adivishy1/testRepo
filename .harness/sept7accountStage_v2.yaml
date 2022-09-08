@@ -1,0 +1,24 @@
+template:
+  name: sept7accountStage
+  identifier: sept7accountStage
+  type: Stage
+  tags: {}
+  spec:
+    type: Approval
+    spec:
+      execution:
+        steps:
+          - step:
+              name: account approval
+              identifier: account_approval
+              type: HarnessApproval
+              timeout: 1d
+              spec:
+                approvalMessage: account template testRepo main updates
+                includePipelineExecutionHistory: true
+                approvers:
+                  minimumCount: 1
+                  disallowPipelineExecutor: false
+                  userGroups: <+input>
+                approverInputs: []
+  versionLabel: v2
