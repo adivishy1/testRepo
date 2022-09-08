@@ -1,0 +1,20 @@
+template:
+  name: stepTemplateDemo08
+  identifier: stepTemplateDemo08
+  type: Step
+  projectIdentifier: demo_gitX
+  orgIdentifier: default
+  tags: {}
+  spec:
+    timeout: 10m
+    type: ShellScript
+    spec:
+      shell: Bash
+      onDelegate: true
+      source:
+        type: Inline
+        spec:
+          script: echo "remote step tmeplate testRepo main"
+      environmentVariables: []
+      outputVariables: []
+  versionLabel: v2
