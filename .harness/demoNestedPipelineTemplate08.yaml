@@ -1,0 +1,26 @@
+pipeline:
+  name: demoNestedPipelineTemplate08
+  identifier: demoNestedPipelineTemplate08
+  template:
+    templateRef: demoTemplatePipeline08
+    versionLabel: v1
+    templateInputs:
+      stages:
+        - stage:
+            identifier: stage1
+            template:
+              templateInputs:
+                type: Approval
+                spec:
+                  execution:
+                    steps:
+                      - step:
+                          identifier: stage_approval
+                          type: HarnessApproval
+                          spec:
+                            approvers:
+                              minimumCount: <+input>
+                              userGroups: <+input>
+  tags: {}
+  projectIdentifier: demo_gitX
+  orgIdentifier: default
