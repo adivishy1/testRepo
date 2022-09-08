@@ -24,17 +24,3 @@ template:
                   disallowPipelineExecutor: false
                   userGroups: <+input>
                 approverInputs: []
-          - step:
-              type: ShellScript
-              name: asdfawfe
-              identifier: asdfawfe
-              spec:
-                shell: Bash
-                onDelegate: true
-                source:
-                  type: Inline
-                  spec:
-                    script: echo 1
-                environmentVariables: []
-                outputVariables: []
-              timeout: 10m
