@@ -25,7 +25,7 @@ template:
                 approverInputs: []
           - step:
               type: ShellScript
-              name: awefawfeger
+              name: awefawfeger123
               identifier: awefawfe
               spec:
                 shell: Bash
