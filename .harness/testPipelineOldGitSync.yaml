@@ -1,0 +1,24 @@
+pipeline:
+  name: testPipelineOldGitSync
+  identifier: testPipelineOldGitSync
+  projectIdentifier: oldGitSync
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: s1
+        identifier: s1
+        template:
+          templateRef: stageOldGitSync
+          versionLabel: v1
+          templateInputs:
+            type: Approval
+            spec:
+              execution:
+                steps:
+                  - step:
+                      identifier: test
+                      type: HarnessApproval
+                      spec:
+                        approvers:
+                          userGroups: <+input>
