@@ -1,0 +1,24 @@
+pipeline:
+  name: testsept13p2
+  identifier: testsept13p2
+  projectIdentifier: oldGitSync
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: s1
+        identifier: s1
+        template:
+          templateRef: account.sept13StageAccount
+          versionLabel: v1
+          templateInputs:
+            type: Approval
+            spec:
+              execution:
+                steps:
+                  - step:
+                      identifier: account_approval
+                      type: HarnessApproval
+                      spec:
+                        approvers:
+                          userGroups: <+input>
