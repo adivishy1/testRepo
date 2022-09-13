@@ -1,0 +1,19 @@
+template:
+  name: sept13StageMain
+  identifier: sept13StageMain
+  versionLabel: v1
+  type: Stage
+  projectIdentifier: GitX_Remote
+  orgIdentifier: default
+  tags: {}
+  spec:
+    type: Approval
+    spec:
+      execution:
+        steps:
+          - step:
+              name: s1
+              identifier: s1
+              template:
+                templateRef: sept13StepMain
+                versionLabel: v1
