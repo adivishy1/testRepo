@@ -1,0 +1,24 @@
+pipeline:
+  name: awfwe
+  identifier: awfwe
+  projectIdentifier: test
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: adc
+        identifier: adc
+        template:
+          templateRef: dafgvaervgaev
+          versionLabel: vwea
+          templateInputs:
+            type: Approval
+            spec:
+              execution:
+                steps:
+                  - step:
+                      identifier: acdsaa
+                      type: HarnessApproval
+                      spec:
+                        approvers:
+                          userGroups: <+input>
