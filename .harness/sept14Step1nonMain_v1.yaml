@@ -15,6 +15,6 @@ template:
       source:
         type: Inline
         spec:
-          script: echo "main patch"
+          script: echo "main patch update"
       environmentVariables: []
       outputVariables: []
