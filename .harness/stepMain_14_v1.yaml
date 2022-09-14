@@ -15,6 +15,6 @@ template:
       source:
         type: Inline
         spec:
-          script: echo "step main testRepo updated"
+          script: echo "step main testRepo updated 2"
       environmentVariables: []
       outputVariables: []
