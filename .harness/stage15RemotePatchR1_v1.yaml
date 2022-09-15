@@ -1,0 +1,26 @@
+template:
+  name: stage15RemotePatchR1
+  identifier: stage15RemotePatchR1
+  versionLabel: v1
+  type: Stage
+  projectIdentifier: GitX_Remote
+  orgIdentifier: default
+  tags: {}
+  spec:
+    type: Approval
+    spec:
+      execution:
+        steps:
+          - step:
+              name: dsvds
+              identifier: dsvds
+              type: HarnessApproval
+              timeout: 1d
+              spec:
+                approvalMessage: "r1 testRepo branch: main-patch"
+                includePipelineExecutionHistory: true
+                approvers:
+                  minimumCount: 1
+                  disallowPipelineExecutor: false
+                  userGroups: <+input>
+                approverInputs: []
