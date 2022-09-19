@@ -1,0 +1,24 @@
+pipeline:
+  name: testRow33Error
+  identifier: testRow33Error
+  projectIdentifier: GitX_Remote
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: a1
+        identifier: a1
+        template:
+          templateRef: stageSept19MainR1
+          versionLabel: v1
+          templateInputs:
+            type: Approval
+            spec:
+              execution:
+                steps:
+                  - step:
+                      identifier: sdfdsa
+                      type: HarnessApproval
+                      spec:
+                        approvers:
+                          userGroups: <+input>
