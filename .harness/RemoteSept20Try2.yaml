@@ -1,0 +1,25 @@
+pipeline:
+  name: RemoteSept20Try2
+  identifier: RemoteSept20Try2
+  projectIdentifier: testNewGitXFlow
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: cf
+        identifier: cf
+        template:
+          templateRef: InlineStageSept20
+          versionLabel: v1
+          templateInputs:
+            type: Approval
+            spec:
+              execution:
+                steps:
+                  - step:
+                      identifier: sd
+                      type: HarnessApproval
+                      spec:
+                        approvers:
+                          minimumCount: <+input>
+                          userGroups: <+input>
