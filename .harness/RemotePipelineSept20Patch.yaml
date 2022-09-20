@@ -1,0 +1,24 @@
+pipeline:
+  name: RemotePipelineSept20Patch
+  identifier: RemotePipelineSept20Patch
+  projectIdentifier: testNewGitXFlow
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: sggd
+        identifier: sggd
+        template:
+          templateRef: InlineStageSept20
+          versionLabel: v1
+          templateInputs:
+            type: Approval
+            spec:
+              execution:
+                steps:
+                  - step:
+                      identifier: sd
+                      type: HarnessApproval
+                      spec:
+                        approvers:
+                          userGroups: <+input>
