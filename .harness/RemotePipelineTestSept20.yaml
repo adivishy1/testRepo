@@ -6,7 +6,7 @@ pipeline:
   tags: {}
   stages:
     - stage:
-        name: s1
+        name: s12
         identifier: s1
         template:
           templateRef: InlineStageSept20
@@ -22,3 +22,4 @@ pipeline:
                       spec:
                         approvers:
                           userGroups: <+input>
+                          minimumCount: <+input>
