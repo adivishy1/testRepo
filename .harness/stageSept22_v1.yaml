@@ -18,6 +18,10 @@ template:
                 approvalMessage: |-
                   Please review the following information
                   and approve the pipeline progression
+
+
+
+                  Updating
                 includePipelineExecutionHistory: true
                 approvers:
                   minimumCount: 1
