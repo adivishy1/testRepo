@@ -10,7 +10,7 @@ template:
       execution:
         steps:
           - step:
-              name: adfva
+              name: adfvaUpdate
               identifier: adfva
               type: HarnessApproval
               timeout: 1d
