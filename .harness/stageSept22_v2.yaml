@@ -1,0 +1,24 @@
+template:
+  name: stageSept22
+  identifier: stageSept22
+  type: Stage
+  tags: {}
+  spec:
+    type: Approval
+    spec:
+      execution:
+        steps:
+          - step:
+              name: adfvaUpdate
+              identifier: adfva
+              type: HarnessApproval
+              timeout: 1d
+              spec:
+                approvalMessage: main patch update
+                includePipelineExecutionHistory: true
+                approvers:
+                  minimumCount: 1
+                  disallowPipelineExecutor: false
+                  userGroups: <+input>
+                approverInputs: []
+  versionLabel: v2
