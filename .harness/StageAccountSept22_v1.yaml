@@ -10,7 +10,7 @@ template:
       execution:
         steps:
           - step:
-              name: adv
+              name: adv32
               identifier: adv
               type: HarnessApproval
               timeout: 1d
