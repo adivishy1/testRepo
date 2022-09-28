@@ -1,0 +1,19 @@
+template:
+  name: RemoteOrgStepSept27
+  identifier: RemoteOrgStepSept27
+  versionLabel: v1
+  type: Step
+  orgIdentifier: default
+  tags: {}
+  spec:
+    timeout: 10m
+    type: ShellScript
+    spec:
+      shell: Bash
+      onDelegate: true
+      source:
+        type: Inline
+        spec:
+          script: echo "123"
+      environmentVariables: []
+      outputVariables: []
