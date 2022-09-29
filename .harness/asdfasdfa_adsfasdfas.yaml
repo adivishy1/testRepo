@@ -1,0 +1,26 @@
+template:
+  name: asdfasdfa
+  identifier: asdfasdfa
+  versionLabel: adsfasdfas
+  type: Stage
+  projectIdentifier: TestAdithya
+  orgIdentifier: default
+  tags: {}
+  spec:
+    type: Custom
+    spec:
+      execution:
+        steps:
+          - step:
+              type: HarnessApproval
+              name: dsaf
+              identifier: dsaf
+              spec:
+                approvalMessage: Please review the following information and approve the pipeline progression
+                includePipelineExecutionHistory: true
+                approvers:
+                  userGroups: <+input>
+                  minimumCount: 1
+                  disallowPipelineExecutor: false
+                approverInputs: []
+              timeout: 1d
