@@ -1,0 +1,19 @@
+template:
+  name: sdfgdsf
+  identifier: sdfgdsf
+  versionLabel: fgd
+  type: Stage
+  projectIdentifier: TestAdithya
+  orgIdentifier: default
+  tags: {}
+  spec:
+    type: Custom
+    spec:
+      execution:
+        steps:
+          - step:
+              name: f
+              identifier: f
+              template:
+                templateRef: org.InlineStepSept27
+                versionLabel: v1
