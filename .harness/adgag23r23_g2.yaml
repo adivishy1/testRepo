@@ -1,0 +1,20 @@
+template:
+  name: adgag23r23
+  identifier: adgag23r23
+  versionLabel: g2
+  type: Step
+  projectIdentifier: gitX
+  orgIdentifier: default
+  tags: {}
+  spec:
+    timeout: 10m
+    type: ShellScript
+    spec:
+      shell: Bash
+      onDelegate: true
+      source:
+        type: Inline
+        spec:
+          script: echo "i"
+      environmentVariables: []
+      outputVariables: []
