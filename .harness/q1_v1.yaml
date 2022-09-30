@@ -1,0 +1,28 @@
+template:
+  name: q12
+  identifier: q12
+  versionLabel: v1
+  type: Stage
+  projectIdentifier: adithyaGitX
+  orgIdentifier: default
+  tags: {}
+  spec:
+    type: Approval
+    spec:
+      execution:
+        steps:
+          - step:
+              type: ShellScript
+              name: dfs
+              identifier: dfs
+              spec:
+                shell: Bash
+                onDelegate: true
+                source:
+                  type: Inline
+                  spec:
+                    script: echo "sd"
+                environmentVariables: []
+                outputVariables: []
+              timeout: 10m
+    approvalType: HarnessApproval
