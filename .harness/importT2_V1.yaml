@@ -1,0 +1,22 @@
+
+
+template:
+  name: importT2
+  identifier: importT2
+  versionLabel: v1
+  type: Step
+  projectIdentifier: GitX_Remote
+  orgIdentifier: default
+  tags: {}
+  spec:
+    timeout: 10m
+    type: ShellScript
+    spec:
+      shell: Bash
+      onDelegate: true
+      source:
+        type: Inline
+        spec:
+          script: echo "import Template"
+      environmentVariables: []
+      outputVariables: []
