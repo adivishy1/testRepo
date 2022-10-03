@@ -1,0 +1,18 @@
+template:
+  name: importT4
+  identifier: importT4
+  versionLabel: v1
+  type: Step
+  tags: {}
+  spec:
+    timeout: 10m
+    type: ShellScript
+    spec:
+      shell: Bash
+      onDelegate: true
+      source:
+        type: Inline
+        spec:
+          script: echo "import Template"
+      environmentVariables: []
+      outputVariables: []
