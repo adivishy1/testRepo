@@ -15,6 +15,6 @@ template:
       source:
         type: Inline
         spec:
-          script: echo "import Template update"
+          script: echo "import Template update from git"
       environmentVariables: []
       outputVariables: []
