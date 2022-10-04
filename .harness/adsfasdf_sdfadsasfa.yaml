@@ -13,6 +13,6 @@ template:
       source:
         type: Inline
         spec:
-          script: adsf
+          script: adsf12
       environmentVariables: []
       outputVariables: []
