@@ -13,6 +13,6 @@ template:
       source:
         type: Inline
         spec:
-          script: adsf12 update hellp
+          script: adsf12 update hellp update
       environmentVariables: []
       outputVariables: []
