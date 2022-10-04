@@ -3,7 +3,7 @@ template:
   identifier: importT6
   versionLabel: v1
   type: Step
-  projectIdentifier: GitX_Remote
+  projectIdentifier: gitXPR
   orgIdentifier: default
   tags: {}
   spec:
