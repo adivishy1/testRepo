@@ -1,6 +1,6 @@
 pipeline:
-  name: abcTest
-  identifier: abcTest
+  name: abcPipelineImport
+  identifier: abcPipelineImport
   projectIdentifier: adithyaGitX
   orgIdentifier: default
   tags: {}
