@@ -1,7 +1,7 @@
 template:
   name: importT6
   identifier: importT6
-  versionLabel: v1
+  versionLabel: V1
   type: Step
   projectIdentifier: gitXPR
   orgIdentifier: default
