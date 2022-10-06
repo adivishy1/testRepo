@@ -1,0 +1,19 @@
+template:
+  name: TryLinking
+  identifier: TryLinking
+  versionLabel: v1
+  type: Stage
+  projectIdentifier: adithya_old_gitSync
+  orgIdentifier: deafult
+  tags: {}
+  spec:
+    type: Custom
+    spec:
+      execution:
+        steps:
+          - step:
+              name: j
+              identifier: j
+              template:
+                templateRef: account.AccountStepRemoteOct6
+                versionLabel: v1
