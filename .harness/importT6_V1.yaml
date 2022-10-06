@@ -1,6 +1,6 @@
 template:
-  name: importT67
-  identifier: importT67
+  name: importT6
+  identifier: importT6
   versionLabel: V1
   type: Step
   projectIdentifier: GitX_Remote
