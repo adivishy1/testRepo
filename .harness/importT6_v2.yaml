@@ -1,0 +1,20 @@
+template:
+  name: importT6
+  identifier: importT6
+  type: Step
+  projectIdentifier: GitX_Remote
+  orgIdentifier: default
+  tags: {}
+  spec:
+    timeout: 10m
+    type: ShellScript
+    spec:
+      shell: Bash
+      onDelegate: true
+      source:
+        type: Inline
+        spec:
+          script: echo "import Template update from git v2"
+      environmentVariables: []
+      outputVariables: []
+  versionLabel: v2
