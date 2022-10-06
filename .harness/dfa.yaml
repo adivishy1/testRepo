@@ -1,0 +1,22 @@
+pipeline:
+  name: dfa
+  identifier: dfa
+  projectIdentifier: adithya_old_gitSync
+  orgIdentifier: deafult
+  tags: {}
+  stages:
+    - stage:
+        name: dfa
+        identifier: dfa
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  name: sd
+                  identifier: sd
+                  template:
+                    templateRef: account.AccountStepRemoteOct6
+                    versionLabel: v1
+        tags: {}
