@@ -1,0 +1,28 @@
+pipeline:
+  name: trialImport
+  identifier: trialImport
+  projectIdentifier: adithyaGitX
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: ref
+        identifier: ref
+        description: ""
+        type: Approval
+        spec:
+          execution:
+            steps:
+              - step:
+                  name: temp
+                  identifier: temp
+                  template:
+                    templateRef: remotetemp
+                    versionLabel: v5
+              - step:
+                  name: yter
+                  identifier: yter
+                  template:
+                    templateRef: stepped
+                    versionLabel: v5
+        tags: {}
