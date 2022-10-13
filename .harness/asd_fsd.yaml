@@ -1,0 +1,27 @@
+template:
+  name: asd
+  identifier: asd
+  versionLabel: fsd
+  type: Stage
+  projectIdentifier: GitX_Remote
+  orgIdentifier: default
+  tags: {}
+  spec:
+    type: Custom
+    spec:
+      execution:
+        steps:
+          - step:
+              type: ShellScript
+              name: asd
+              identifier: asd
+              spec:
+                shell: Bash
+                onDelegate: true
+                source:
+                  type: Inline
+                  spec:
+                    script: asfd
+                environmentVariables: []
+                outputVariables: []
+              timeout: 10m
