@@ -1,0 +1,13 @@
+pipeline:
+  name: nestedPipeline1
+  identifier: nestedPipeline1
+  projectIdentifier: SimplifiedGitSync_Do_Not_Delete
+  orgIdentifier: Simlified_Git_sync
+  tags: {}
+  stages:
+    - stage:
+        name: s11
+        identifier: s11
+        template:
+          templateRef: nestedStageRepo1Main
+          versionLabel: v1
