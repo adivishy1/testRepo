@@ -1,0 +1,24 @@
+pipeline:
+  name: remoteTemplateSameRepo
+  identifier: remoteTemplateSameRepo
+  projectIdentifier: SimplifiedGitSync_Do_Not_Delete
+  orgIdentifier: Simlified_Git_sync
+  tags: {}
+  stages:
+    - stage:
+        name: d1
+        identifier: d1
+        template:
+          templateRef: testStageR1Main
+          versionLabel: v1
+          templateInputs:
+            type: Approval
+            spec:
+              execution:
+                steps:
+                  - step:
+                      identifier: approval
+                      type: HarnessApproval
+                      spec:
+                        approvers:
+                          userGroups: <+input>
