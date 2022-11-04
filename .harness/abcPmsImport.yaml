@@ -3,7 +3,7 @@ pipeline:
   identifier: abcPmsImport
   projectIdentifier: GitX_Remote
   orgIdentifier: default
-  tags: {}
+  tags: {asdf}
   stages:
     - stage:
         name: zd
