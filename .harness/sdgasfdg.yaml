@@ -2,7 +2,7 @@ pipeline:
   name: sdgasfdg
   identifier: sdgasfdg
   projectIdentifier: GitX_Remote
-  orgIdentifier: default
+  orgIdentifier: default_update
   tags: {}
   stages:
     - stage:
