@@ -1,0 +1,22 @@
+inputSet:
+  identifier: "inputSet2"
+  pipeline:
+    identifier: "asdfasdfsadfadsfsaf"
+    stages:
+    - stage:
+        identifier: "asdfasdf"
+        type: "Approval"
+        spec:
+          execution:
+            steps:
+            - step:
+                identifier: "sdfasdfasfda"
+                type: "HarnessApproval"
+                spec:
+                  approvers:
+                    minimumCount: 1
+                    userGroups:
+                    - "account.ug3"
+  name: "inputSet2"
+  orgIdentifier: "default"
+  projectIdentifier: "GitX_Remote"
