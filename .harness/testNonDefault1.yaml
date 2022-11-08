@@ -14,7 +14,7 @@ pipeline:
           execution:
             steps:
               - step:
-                  name: sd
+                  name: sdfds
                   identifier: sd
                   type: HarnessApproval
                   timeout: 1d
