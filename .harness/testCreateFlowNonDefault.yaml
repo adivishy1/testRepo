@@ -14,7 +14,7 @@ pipeline:
           execution:
             steps:
               - step:
-                  name: asdf
+                  name: asdf - update
                   identifier: asdf
                   type: HarnessApproval
                   timeout: 1d
