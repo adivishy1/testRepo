@@ -14,7 +14,7 @@ pipeline:
           execution:
             steps:
               - step:
-                  name: afs
+                  name: afs - update
                   identifier: afs
                   type: HarnessApproval
                   timeout: 1d
