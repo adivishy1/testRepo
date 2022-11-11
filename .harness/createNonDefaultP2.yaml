@@ -1,6 +1,6 @@
 pipeline:
-  name: createNonDefaultP1
-  identifier: createNonDefaultP1
+  name: createNonDefaultP2
+  identifier: createNonDefaultP2
   projectIdentifier: GitX_Remote
   orgIdentifier: default
   tags: {}
