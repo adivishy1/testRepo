@@ -1,0 +1,30 @@
+pipeline:
+  name: Nov15TriggerP1
+  identifier: Nov15TriggerP1
+  projectIdentifier: GitX_Remote
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: main
+        identifier: main
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: ShellScript
+                  name: Shell Script
+                  identifier: ShellScript
+                  spec:
+                    shell: Bash
+                    onDelegate: true
+                    source:
+                      type: Inline
+                      spec:
+                        script: echo "main"
+                    environmentVariables: []
+                    outputVariables: []
+                  timeout: 10m
+        tags: {}
