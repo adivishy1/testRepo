@@ -1,0 +1,32 @@
+pipeline:
+  name: importQaNov16P2
+  identifier: importQaNov16P2
+  projectIdentifier: AmitTest
+  orgIdentifier: default
+  description: sdfasdf
+  tags: {}
+  stages:
+    - stage:
+        name: kj
+        identifier: kj
+        description: ""
+        type: Approval
+        spec:
+          execution:
+            steps:
+              - step:
+                  name: fg
+                  identifier: fg
+                  type: HarnessApproval
+                  timeout: 1d
+                  spec:
+                    approvalMessage: |-
+                      Please review the following information
+                      and approve the pipeline progression
+                    includePipelineExecutionHistory: true
+                    approvers:
+                      minimumCount: 1
+                      disallowPipelineExecutor: false
+                      userGroups: <+input>
+                    approverInputs: []
+        tags: {}
