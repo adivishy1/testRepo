@@ -5,6 +5,7 @@ template:
   type: Step
   projectIdentifier: SimplifiedGitSync_Do_Not_Delete
   orgIdentifier: Simlified_Git_sync
+  description: adfsf
   tags: {}
   spec:
     timeout: 10m
