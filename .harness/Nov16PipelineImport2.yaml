@@ -3,6 +3,7 @@ pipeline:
   identifier: Nov16PipelineImport2
   projectIdentifier: SimplifiedGitSync_Do_Not_Delete
   orgIdentifier: Simlified_Git_sync
+  description: this is description
   tags: {}
   stages:
     - stage:
