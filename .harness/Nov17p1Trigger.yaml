@@ -1,0 +1,30 @@
+pipeline:
+  name: Nov17p1Trigger
+  identifier: Nov17p1Trigger
+  projectIdentifier: GitX_Remote
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: asfd
+        identifier: asfd
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: ShellScript
+                  name: Shell Script
+                  identifier: ShellScript
+                  spec:
+                    shell: Bash
+                    onDelegate: true
+                    source:
+                      type: Inline
+                      spec:
+                        script: echo "1"
+                    environmentVariables: []
+                    outputVariables: []
+                  timeout: 10m
+        tags: {}
