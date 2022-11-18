@@ -1,0 +1,23 @@
+inputSet:
+  identifier: "UserGroupInputSet"
+  pipeline:
+    identifier: "Nov18P1"
+    stages:
+    - stage:
+        identifier: "ss"
+        template:
+          templateInputs:
+            type: "Approval"
+            spec:
+              execution:
+                steps:
+                - step:
+                    identifier: "asdf"
+                    type: "HarnessApproval"
+                    spec:
+                      approvers:
+                        userGroups:
+                        - "account._account_all_users"
+  name: "UserGroupInputSet"
+  orgIdentifier: "default"
+  projectIdentifier: "GitX_Remote"
