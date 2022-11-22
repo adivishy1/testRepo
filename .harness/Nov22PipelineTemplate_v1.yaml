@@ -1,0 +1,16 @@
+template:
+  name: Nov22PipelineTemplate
+  identifier: Nov22PipelineTemplate
+  versionLabel: v1
+  type: Pipeline
+  projectIdentifier: AmitTest
+  orgIdentifier: default
+  tags: {}
+  spec:
+    stages:
+      - stage:
+          name: asd
+          identifier: asd
+          template:
+            templateRef: Nov22Stage
+            versionLabel: v1
