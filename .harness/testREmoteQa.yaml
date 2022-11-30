@@ -1,0 +1,30 @@
+pipeline:
+  name: testREmoteQa
+  identifier: testREmoteQa
+  projectIdentifier: adithyaGitX
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: dfgh
+        identifier: dfgh
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: ShellScript
+                  name: Shell Script
+                  identifier: ShellScript
+                  spec:
+                    shell: Bash
+                    onDelegate: true
+                    source:
+                      type: Inline
+                      spec:
+                        script: echo 1
+                    environmentVariables: []
+                    outputVariables: []
+                  timeout: 10m
+        tags: {}
