@@ -1,0 +1,30 @@
+pipeline:
+  name: testRemoteShell
+  identifier: testRemoteShell
+  projectIdentifier: GitX_Remote
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: asd
+        identifier: asd
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: ShellScript
+                  name: Shell Script
+                  identifier: ShellScript
+                  spec:
+                    shell: Bash
+                    onDelegate: true
+                    source:
+                      type: Inline
+                      spec:
+                        script: echo "main-a-patch"
+                    environmentVariables: []
+                    outputVariables: []
+                  timeout: 10m
+        tags: {}
