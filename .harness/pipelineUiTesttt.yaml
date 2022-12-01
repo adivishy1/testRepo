@@ -1,0 +1,32 @@
+pipeline:
+  name: pipelineUiTesttt
+  identifier: pipelineUiTesttt
+  projectIdentifier: GitX_Remote
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: sdfgsd
+        identifier: sdfgsd
+        description: ""
+        type: Approval
+        spec:
+          execution:
+            steps:
+              - step:
+                  name: asdfa
+                  identifier: asdfa
+                  type: HarnessApproval
+                  timeout: 1d
+                  spec:
+                    approvalMessage: |-
+                      Please review the following information
+                      and approve the pipeline progression. asdfsdf
+                    includePipelineExecutionHistory: true
+                    approvers:
+                      minimumCount: 1
+                      disallowPipelineExecutor: false
+                      userGroups:
+                        - account.testUserGroup2
+                    approverInputs: []
+        tags: {}
