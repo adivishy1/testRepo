@@ -1,0 +1,19 @@
+template:
+  name: stageStressDec2
+  identifier: stageStressDec2
+  versionLabel: v1
+  type: Stage
+  projectIdentifier: AmitTest
+  orgIdentifier: GitXOrg
+  tags: {}
+  spec:
+    type: Custom
+    spec:
+      execution:
+        steps:
+          - step:
+              name: s1
+              identifier: s1
+              template:
+                templateRef: stressStepDec2
+                versionLabel: v1
