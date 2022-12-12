@@ -29,30 +29,8 @@ pipeline:
                   timeout: 10m
         tags: {}
     - stage:
-        name: der
-        identifier: der
+        name: uyt
+        identifier: uyt
         template:
-          templateRef: k8sMigration12Dec
+          templateRef: StageDeploy12Dec
           versionLabel: "1"
-          templateInputs:
-            type: Deployment
-            spec:
-              serviceConfig:
-                serviceDefinition:
-                  type: Kubernetes
-                  spec:
-                    manifests:
-                      - manifest:
-                          identifier: manifest1
-                          type: Kustomize
-                          spec:
-                            store:
-                              type: Github
-                              spec:
-                                repoName: <+input>
-              infrastructure:
-                infrastructureDefinition:
-                  type: KubernetesDirect
-                  spec:
-                    connectorRef: <+input>
-                    namespace: <+input>
