@@ -5,9 +5,38 @@ pipeline:
   orgIdentifier: GitXOrg
   tags: {}
   stages:
-    - stage:
-        name: s1
-        identifier: s1
-        template:
-          templateRef: StageDeploy12Dec
-          versionLabel: "1"
+    - parallel:
+        - stage:
+            name: s1
+            identifier: s1
+            template:
+              templateRef: StageDeploy12Dec
+              versionLabel: "1"
+        - stage:
+            name: s2
+            identifier: s2
+            template:
+              templateRef: k8sMigration12Dec
+              versionLabel: "1"
+              templateInputs:
+                type: Deployment
+                spec:
+                  serviceConfig:
+                    serviceDefinition:
+                      type: Kubernetes
+                      spec:
+                        manifests:
+                          - manifest:
+                              identifier: manifest1
+                              type: Kustomize
+                              spec:
+                                store:
+                                  type: Github
+                                  spec:
+                                    repoName: <+input>
+                  infrastructure:
+                    infrastructureDefinition:
+                      type: KubernetesDirect
+                      spec:
+                        connectorRef: <+input>
+                        namespace: <+input>
