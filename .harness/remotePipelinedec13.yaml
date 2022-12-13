@@ -1,0 +1,31 @@
+pipeline:
+  name: remotePipelinedec13
+  identifier: remotePipelinedec13
+  projectIdentifier: AmitTest
+  orgIdentifier: GitXOrg
+  tags: {}
+  stages:
+    - stage:
+        name: asdf
+        identifier: asdf
+        description: ""
+        type: Approval
+        spec:
+          execution:
+            steps:
+              - step:
+                  name: asdf
+                  identifier: asdf
+                  type: HarnessApproval
+                  timeout: 1d
+                  spec:
+                    approvalMessage: |-
+                      Please review the following information
+                      and approve the pipeline progression
+                    includePipelineExecutionHistory: true
+                    approvers:
+                      minimumCount: 1
+                      disallowPipelineExecutor: false
+                      userGroups: <+input>
+                    approverInputs: []
+        tags: {}
