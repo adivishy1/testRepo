@@ -34,3 +34,4 @@ pipeline:
         template:
           templateRef: StageDeploy12Dec
           versionLabel: "1"
+  description: d1
