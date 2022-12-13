@@ -28,10 +28,4 @@ pipeline:
                     outputVariables: []
                   timeout: 10m
         tags: {}
-    - stage:
-        name: uyt
-        identifier: uyt
-        template:
-          templateRef: StageDeploy12Dec
-          versionLabel: "1"
   description: d1
