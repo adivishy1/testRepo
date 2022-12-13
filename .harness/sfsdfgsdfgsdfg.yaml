@@ -1,0 +1,24 @@
+pipeline:
+  name: sfsdfgsdfgsdfg
+  identifier: sfsdfgsdfgsdfg
+  projectIdentifier: adithyaGitX
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: a
+        identifier: a
+        template:
+          templateRef: dec13Stage
+          versionLabel: v1
+          templateInputs:
+            type: Approval
+            spec:
+              execution:
+                steps:
+                  - step:
+                      identifier: fsda
+                      type: HarnessApproval
+                      spec:
+                        approvers:
+                          userGroups: <+input>
