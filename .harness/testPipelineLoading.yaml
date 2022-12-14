@@ -1,0 +1,13 @@
+pipeline:
+  name: testPipelineLoading
+  identifier: testPipelineLoading
+  projectIdentifier: GitX_Remote
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: k
+        identifier: k
+        template:
+          templateRef: templateStagedec14
+          versionLabel: v1
