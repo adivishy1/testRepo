@@ -1,0 +1,28 @@
+pipeline:
+  name: asdfasdf23423
+  identifier: asdfasdf23423
+  projectIdentifier: GitX_Remote
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: fs
+        identifier: fs
+        template:
+          templateRef: stageDec01Nested
+          versionLabel: v1
+          templateInputs:
+            type: Custom
+            spec:
+              execution:
+                steps:
+                  - step:
+                      identifier: s1
+                      template:
+                        templateInputs:
+                          type: ShellScript
+                          spec:
+                            source:
+                              type: Inline
+                              spec:
+                                script: <+input>
