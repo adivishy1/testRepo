@@ -1,0 +1,24 @@
+pipeline:
+  name: testPipelineDec14
+  identifier: testPipelineDec14
+  projectIdentifier: oldGit
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: v11
+        identifier: v11
+        template:
+          templateRef: stageDec14
+          versionLabel: v1
+          templateInputs:
+            type: Approval
+            spec:
+              execution:
+                steps:
+                  - step:
+                      identifier: sadfads
+                      type: HarnessApproval
+                      spec:
+                        approvers:
+                          userGroups: <+input>
