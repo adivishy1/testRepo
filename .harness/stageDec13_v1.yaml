@@ -31,3 +31,14 @@ template:
                 environmentVariables: []
                 outputVariables: []
               timeout: 10m
+          - step:
+              name: temp1
+              identifier: temp1
+              template:
+                templateRef: account.pl_auto_template_7JYph
+                versionLabel: v3
+                templateInputs:
+                  type: HarnessApproval
+                  spec:
+                    approvers:
+                      userGroups: <+input>
