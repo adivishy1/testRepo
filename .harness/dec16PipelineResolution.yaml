@@ -1,0 +1,13 @@
+pipeline:
+  name: dec16PipelineResolution
+  identifier: dec16PipelineResolution
+  projectIdentifier: GitX_Remote
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: dasf
+        identifier: dasf
+        template:
+          templateRef: dec16StageTemplate
+          versionLabel: v1
