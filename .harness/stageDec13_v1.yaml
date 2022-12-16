@@ -17,3 +17,17 @@ template:
               template:
                 templateRef: step13Dec
                 versionLabel: v1
+          - step:
+              type: ShellScript
+              name: fgr
+              identifier: fgr
+              spec:
+                shell: Bash
+                onDelegate: true
+                source:
+                  type: Inline
+                  spec:
+                    script: <+input>
+                environmentVariables: []
+                outputVariables: []
+              timeout: 10m
