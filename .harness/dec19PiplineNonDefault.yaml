@@ -6,7 +6,7 @@ pipeline:
   tags: {}
   stages:
     - stage:
-        name: s2
+        name: s23
         identifier: xvc
         template:
           templateRef: dec19NonDefaultTemplate
