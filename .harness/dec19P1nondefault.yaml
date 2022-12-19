@@ -6,7 +6,7 @@ pipeline:
   tags: {}
   stages:
     - stage:
-        name: a
+        name: aa
         identifier: a
         template:
           templateRef: stageDefaultTestRepo2T2
