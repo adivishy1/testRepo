@@ -1,0 +1,32 @@
+pipeline:
+  name: dec19NonDefault
+  identifier: dec19NonDefault
+  projectIdentifier: AmitTest
+  orgIdentifier: GitXOrg
+  tags: {}
+  stages:
+    - stage:
+        name: a
+        identifier: a
+        template:
+          templateRef: StageRemote
+          versionLabel: "1"
+          templateInputs:
+            type: Custom
+            spec:
+              execution:
+                steps:
+                  - step:
+                      identifier: A3
+                      template:
+                        templateInputs:
+                          type: ShellScript
+                          timeout: <+input>
+                  - step:
+                      identifier: A34
+                      type: ShellScript
+                      spec:
+                        source:
+                          type: Inline
+                          spec:
+                            script: <+input>
