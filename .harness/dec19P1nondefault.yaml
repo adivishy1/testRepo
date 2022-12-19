@@ -1,0 +1,13 @@
+pipeline:
+  name: dec19P1nondefault
+  identifier: dec19P1nondefault
+  projectIdentifier: GitX_Remote
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: a
+        identifier: a
+        template:
+          templateRef: stageDefaultTestRepo2T2
+          versionLabel: v1
