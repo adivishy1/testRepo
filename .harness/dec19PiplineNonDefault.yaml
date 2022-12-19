@@ -1,0 +1,13 @@
+pipeline:
+  name: dec19PiplineNonDefault
+  identifier: dec19PiplineNonDefault
+  projectIdentifier: AmitTest
+  orgIdentifier: GitXOrg
+  tags: {}
+  stages:
+    - stage:
+        name: s1
+        identifier: xvc
+        template:
+          templateRef: dec19NonDefaultTemplate
+          versionLabel: v1
