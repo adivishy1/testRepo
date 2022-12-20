@@ -1,0 +1,13 @@
+pipeline:
+  name: bbPipeline3
+  identifier: bbPipeline3
+  projectIdentifier: Git_Caching
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: a2
+        identifier: a2
+        template:
+          templateRef: bbStage6
+          versionLabel: v1
