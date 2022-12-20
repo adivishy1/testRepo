@@ -40,3 +40,9 @@ pipeline:
         template:
           templateRef: bbStage4
           versionLabel: v1
+    - stage:
+        name: s5
+        identifier: s5
+        template:
+          templateRef: bbStage5
+          versionLabel: v
