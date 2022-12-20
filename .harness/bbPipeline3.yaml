@@ -1,19 +1,30 @@
 pipeline:
-  name: bbPipeline3
-  identifier: bbPipeline3
-  projectIdentifier: Git_Caching
-  orgIdentifier: default
+  name: "bbPipeline3"
+  identifier: "bbPipeline3"
+  projectIdentifier: "Git_Caching"
+  orgIdentifier: "default"
   tags: {}
   stages:
-    - stage:
-        name: a3
-        identifier: a3
-        template:
-          templateRef: bbStage3
-          versionLabel: v1
-    - stage:
-        name: a4
-        identifier: a4
-        template:
-          templateRef: bbStage2
-          versionLabel: v1          
+  - stage:
+      name: "a3"
+      identifier: "a3"
+      template:
+        templateRef: "bbStage3"
+        versionLabel: "v1"
+  - stage:
+      name: "a4"
+      identifier: "a4"
+      template:
+        templateRef: "bbStage2"
+        versionLabel: "v1"
+        templateInputs:
+          type: "Approval"
+          spec:
+            execution:
+              steps:
+              - step:
+                  identifier: "EW"
+                  type: "HarnessApproval"
+                  spec:
+                    approvers:
+                      userGroups: "<+input>"
