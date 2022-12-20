@@ -21,7 +21,7 @@ template:
                 source:
                   type: Inline
                   spec:
-                    script: echo 1
+                    script: echo "update"
                 environmentVariables: []
                 outputVariables: []
               timeout: 10m
