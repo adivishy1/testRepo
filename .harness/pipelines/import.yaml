@@ -1,0 +1,107 @@
+pipeline:
+    name: import
+    identifier: import1
+    projectIdentifier: TestAdithya
+    orgIdentifier: default
+    tags: {}
+    stages:
+        - stage:
+              name: approval
+              identifier: approval
+              description: ""
+              type: Approval
+              spec:
+                  execution:
+                      steps:
+                          - step:
+                                type: ShellScript
+                                name: test
+                                identifier: test
+                                spec:
+                                    shell: Bash
+                                    onDelegate: true
+                                    source:
+                                        type: Inline
+                                        spec:
+                                            script: echo "hi"
+                                    environmentVariables: []
+                                    outputVariables: []
+                                    executionTarget: {}
+                                timeout: 1m
+                  serviceDependencies: []
+              tags: {}
+    variables:
+        - name: slackWebhook
+          type: Secret
+          value: slackWebhookUrl
+        - name: msTeams
+          type: Secret
+          value: msTeamsSecret
+        - name: pagerDutySecret
+          type: Secret
+          value: pagerDutySecret
+    notificationRules:
+        - name: emailUG
+          identifier: emailUG
+          pipelineEvents:
+              - type: PipelineStart
+          notificationMethod:
+              type: Email
+              spec:
+                  userGroups:
+                      - account.testUserGroup2
+                  recipients: []
+          enabled: false
+        - name: email
+          identifier: email
+          pipelineEvents:
+              - type: AllEvents
+          notificationMethod:
+              type: Email
+              spec:
+                  userGroups: []
+                  recipients:
+                      - adithya.viswanathan@harness.io
+          enabled: false
+        - name: pagerDuty
+          identifier: pagerDuty
+          pipelineEvents:
+              - type: AllEvents
+          notificationMethod:
+              type: PagerDuty
+              spec:
+                  userGroups: []
+                  integrationKey: <+pipeline.variables.pagerDutySecret>
+          enabled: false
+        - name: msTeams
+          identifier: msTeams
+          pipelineEvents:
+              - type: AllEvents
+          notificationMethod:
+              type: MsTeams
+              spec:
+                  userGroups: []
+                  msTeamKeys:
+                      - https://harnessinc.webhook.office.com/webhookb2/24f650b7-95cd-43d5-90c8-f08baf445476@b229b2bb-5f33-4d22-bce0-730f6474e906/IncomingWebhook/267d7fa6dc72431e8e6dbfd0e8a30445/1cf4605b-aae0-49bb-bf31-d274d5741bd9
+          enabled: true
+        - name: groupNoti
+          identifier: groupNoti
+          pipelineEvents:
+              - type: AllEvents
+          notificationMethod:
+              type: Slack
+              spec:
+                  userGroups:
+                      - account.testUserGroup
+                  webhookUrl: ""
+          enabled: false
+        - name: slack
+          identifier: slack
+          pipelineEvents:
+              - type: AllEvents
+          notificationMethod:
+              type: Slack
+              spec:
+                  userGroups: []
+                  webhookUrl: <+pipeline.variables.slackWebhook>
+          enabled: false
