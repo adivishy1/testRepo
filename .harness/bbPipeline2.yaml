@@ -11,3 +11,20 @@ pipeline:
         template:
           templateRef: stageBugBashTemplate
           versionLabel: v1
+    - stage:
+        name: s2
+        identifier: s2
+        template:
+          templateRef: bbStage2
+          versionLabel: v1
+          templateInputs:
+            type: Approval
+            spec:
+              execution:
+                steps:
+                  - step:
+                      identifier: EW
+                      type: HarnessApproval
+                      spec:
+                        approvers:
+                          userGroups: <+input>
