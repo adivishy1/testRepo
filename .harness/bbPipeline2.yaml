@@ -46,3 +46,18 @@ pipeline:
         template:
           templateRef: bbStage5
           versionLabel: v
+    - stage:
+        name: s6
+        identifier: s6
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  name: ss1
+                  identifier: ss1
+                  template:
+                    templateRef: bbStep1
+                    versionLabel: v
+        tags: {}
