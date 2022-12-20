@@ -11,20 +11,4 @@ pipeline:
       template:
         templateRef: "bbStage3"
         versionLabel: "v1"
-  - stage:
-      name: "a4"
-      identifier: "a4"
-      template:
-        templateRef: "bbStage2"
-        versionLabel: "v1"
-        templateInputs:
-          type: "Approval"
-          spec:
-            execution:
-              steps:
-              - step:
-                  identifier: "EW"
-                  type: "HarnessApproval"
-                  spec:
-                    approvers:
-                      userGroups: "<+input>"
+  
