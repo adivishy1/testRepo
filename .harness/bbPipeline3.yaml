@@ -6,8 +6,14 @@ pipeline:
   tags: {}
   stages:
     - stage:
-        name: a2
-        identifier: a2
+        name: a4
+        identifier: a4
         template:
-          templateRef: bbStage6
+          templateRef: bbStage3
+          versionLabel: v1
+    - stage:
+        name: a3
+        identifier: a3
+        template:
+          templateRef: bbStage5
           versionLabel: v1
