@@ -28,3 +28,9 @@ pipeline:
                       spec:
                         approvers:
                           userGroups: <+input>
+    - stage:
+        name: s3
+        identifier: s3
+        template:
+          templateRef: bbStage3
+          versionLabel: v1
