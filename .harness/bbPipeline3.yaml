@@ -9,7 +9,7 @@ pipeline:
         name: a3
         identifier: a3
         template:
-          templateRef: bbStage5
+          templateRef: bbStage3
           versionLabel: v1
     - stage:
         name: a4
