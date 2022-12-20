@@ -1,7 +1,7 @@
 pipeline:
     name: import
     identifier: import1
-    projectIdentifier: TestAdithya
+    projectIdentifier: GitX_Remote
     orgIdentifier: default
     tags: {}
     stages:
