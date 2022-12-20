@@ -66,4 +66,10 @@ pipeline:
                   template:
                     templateRef: bbStep2
                     versionLabel: v
+              - step:
+                  name: ss3
+                  identifier: ss3
+                  template:
+                    templateRef: bbStep3
+                    versionLabel: v
         tags: {}
