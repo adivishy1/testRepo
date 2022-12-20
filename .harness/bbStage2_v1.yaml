@@ -1,0 +1,28 @@
+template:
+  name: bbStage2
+  identifier: bbStage2
+  versionLabel: v1
+  type: Stage
+  projectIdentifier: Git_Caching
+  orgIdentifier: default
+  tags: {}
+  spec:
+    type: Approval
+    spec:
+      execution:
+        steps:
+          - step:
+              name: EW
+              identifier: EW
+              type: HarnessApproval
+              timeout: 1d
+              spec:
+                approvalMessage: |-
+                  Please review the following information
+                  and approve the pipeline progression
+                includePipelineExecutionHistory: true
+                approvers:
+                  minimumCount: 1
+                  disallowPipelineExecutor: false
+                  userGroups: <+input>
+                approverInputs: []
