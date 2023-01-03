@@ -1,0 +1,13 @@
+pipeline:
+  name: jan3Inline5Template
+  identifier: jan3Inline5Template
+  projectIdentifier: GitX_Remote
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: adsf
+        identifier: adsf
+        template:
+          templateRef: stageMainDec19
+          versionLabel: v1
