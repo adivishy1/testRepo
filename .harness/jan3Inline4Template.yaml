@@ -1,0 +1,13 @@
+pipeline:
+  name: jan3Inline4Template
+  identifier: jan3Inline4Template
+  projectIdentifier: GitX_Remote
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: bvc
+        identifier: bvc
+        template:
+          templateRef: stageMainDec19
+          versionLabel: v1
