@@ -1,0 +1,21 @@
+inputSet:
+  identifier: "inlineIpnput6"
+  name: "inlineIpnput6"
+  orgIdentifier: "default"
+  projectIdentifier: "GitX_Remote"
+  pipeline:
+    identifier: "jan4Inline6"
+    stages:
+    - stage:
+        identifier: "dsf"
+        type: "Approval"
+        spec:
+          execution:
+            steps:
+            - step:
+                identifier: "df"
+                type: "HarnessApproval"
+                spec:
+                  approvers:
+                    userGroups:
+                    - "account.testUserGroup2"
