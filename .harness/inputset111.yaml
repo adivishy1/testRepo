@@ -1,0 +1,21 @@
+inputSet:
+  identifier: "inputset111"
+  name: "inputset111"
+  orgIdentifier: "default"
+  projectIdentifier: "TestAdithya"
+  pipeline:
+    identifier: "QaIssue"
+    stages:
+    - stage:
+        identifier: "kj"
+        type: "Approval"
+        spec:
+          execution:
+            steps:
+            - step:
+                identifier: "j"
+                type: "HarnessApproval"
+                spec:
+                  approvers:
+                    userGroups:
+                    - "account._account_all_users"
