@@ -1,0 +1,10 @@
+overlayInputSet:
+  name: overlaidInputSet
+  identifier: overlaidInputSet
+  orgIdentifier: default
+  projectIdentifier: GitX_Remote
+  pipelineIdentifier: moveInlineToRemoteOverLaidJan9
+  inputSetReferences:
+    - inputSet1
+    - inputSet2
+  tags: {}
