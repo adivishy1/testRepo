@@ -1,0 +1,31 @@
+pipeline:
+  name: QaIssue
+  identifier: QaIssue
+  projectIdentifier: TestAdithya
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: kj
+        identifier: kj
+        description: ""
+        type: Approval
+        spec:
+          execution:
+            steps:
+              - step:
+                  name: j
+                  identifier: j
+                  type: HarnessApproval
+                  timeout: 1d
+                  spec:
+                    approvalMessage: |-
+                      Please review the following information
+                      and approve the pipeline progression
+                    includePipelineExecutionHistory: true
+                    approvers:
+                      minimumCount: 1
+                      disallowPipelineExecutor: false
+                      userGroups: <+input>
+                    approverInputs: []
+        tags: {}
