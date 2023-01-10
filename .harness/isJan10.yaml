@@ -1,0 +1,21 @@
+inputSet:
+  name: isJan10
+  identifier: isJan10
+  orgIdentifier: default
+  projectIdentifier: GitX_Remote
+  pipeline:
+    identifier: jan10Pipeline
+    stages:
+      - stage:
+          identifier: df
+          type: Approval
+          spec:
+            execution:
+              steps:
+                - step:
+                    identifier: da
+                    type: HarnessApproval
+                    spec:
+                      approvers:
+                        userGroups:
+                          - account._account_all_users
