@@ -1,26 +1,19 @@
 template:
-  name: jan12Nested
-  identifier: jan12Nested
-  versionLabel: v1
-  type: Stage
-  projectIdentifier: GitX_Remote
-  orgIdentifier: default
+  name: "jan12Nested"
+  identifier: "jan12Nested"
+  versionLabel: "v1"
+  type: "Stage"
+  projectIdentifier: "GitX_Remote"
+  orgIdentifier: "default"
   tags: {}
   spec:
-    type: Custom
+    type: "Custom"
     spec:
       execution:
         steps:
-          - step:
-              name: s1
-              identifier: s1
-              template:
-                templateRef: jan12Step
-                versionLabel: v1
-                templateInputs:
-                  type: ShellScript
-                  spec:
-                    source:
-                      type: Inline
-                      spec:
-                        script: <+input>
+        - step:
+            name: "s1"
+            identifier: "s1"
+            template:
+              templateRef: "jan12Step"
+              versionLabel: "v1"
