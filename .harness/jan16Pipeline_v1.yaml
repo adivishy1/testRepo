@@ -1,0 +1,44 @@
+template:
+  name: jan16Pipeline
+  identifier: jan16Pipeline
+  versionLabel: v1
+  type: Pipeline
+  projectIdentifier: GitX_Remote
+  orgIdentifier: default
+  tags: {}
+  spec:
+    stages:
+      - stage:
+          name: s1
+          identifier: s1
+          template:
+            templateRef: jan16Stage1
+            versionLabel: v1
+            templateInputs:
+              type: Approval
+              spec:
+                execution:
+                  steps:
+                    - step:
+                        identifier: ss1
+                        type: HarnessApproval
+                        spec:
+                          approvers:
+                            userGroups: <+input>
+      - stage:
+          name: s2
+          identifier: s2
+          template:
+            templateRef: jan16Stage2
+            versionLabel: v1
+            templateInputs:
+              type: Approval
+              spec:
+                execution:
+                  steps:
+                    - step:
+                        identifier: s1
+                        type: HarnessApproval
+                        spec:
+                          approvers:
+                            userGroups: <+input>
