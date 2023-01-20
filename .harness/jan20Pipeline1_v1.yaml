@@ -1,0 +1,22 @@
+template:
+  name: jan20Pipeline1
+  identifier: jan20Pipeline1
+  versionLabel: v1
+  type: Pipeline
+  projectIdentifier: GitX_Remote
+  orgIdentifier: default
+  tags: {}
+  spec:
+    stages:
+      - stage:
+          name: stage1
+          identifier: stage1
+          template:
+            templateRef: jan20Stage1
+            versionLabel: v1
+      - stage:
+          name: stage2
+          identifier: stage2
+          template:
+            templateRef: jan20Stage2
+            versionLabel: v1
