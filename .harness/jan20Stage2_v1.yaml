@@ -1,0 +1,19 @@
+template:
+  name: jan20Stage2
+  identifier: jan20Stage2
+  versionLabel: v1
+  type: Stage
+  projectIdentifier: GitX_Remote
+  orgIdentifier: default
+  tags: {}
+  spec:
+    type: Custom
+    spec:
+      execution:
+        steps:
+          - step:
+              name: s2
+              identifier: s2
+              template:
+                templateRef: jan20Step2
+                versionLabel: v1
