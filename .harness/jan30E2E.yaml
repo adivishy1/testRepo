@@ -1,0 +1,9 @@
+pipeline:
+  name: jan30E2E
+  identifier: jan30E2E
+  template:
+    templateRef: jan20Pipeline1
+    versionLabel: v1
+  tags: {}
+  projectIdentifier: GitX_Remote
+  orgIdentifier: default
