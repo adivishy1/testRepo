@@ -1,0 +1,13 @@
+pipeline:
+  name: feb1Pms
+  identifier: feb1Pms
+  projectIdentifier: GitX_Remote
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: s1
+        identifier: s1
+        template:
+          templateRef: feb1stage
+          versionLabel: v1
