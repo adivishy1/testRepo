@@ -1,0 +1,27 @@
+template:
+  name: feb1stage
+  identifier: feb1stage
+  versionLabel: v1
+  type: Stage
+  projectIdentifier: GitX_Remote
+  orgIdentifier: default
+  tags: {}
+  spec:
+    type: Custom
+    spec:
+      execution:
+        steps:
+          - step:
+              type: ShellScript
+              name: Shell Script_1
+              identifier: ShellScript_1
+              spec:
+                shell: Bash
+                onDelegate: true
+                source:
+                  type: Inline
+                  spec:
+                    script: echo 1
+                environmentVariables: []
+                outputVariables: []
+              timeout: 10m
