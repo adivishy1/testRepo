@@ -1,0 +1,25 @@
+pipeline:
+  name: febPipeline1
+  identifier: febPipeline1
+  template:
+    templateRef: jan20Pipeline1
+    versionLabel: v1
+    templateInputs:
+      stages:
+        - stage:
+            identifier: stage4
+            template:
+              templateInputs:
+                type: Approval
+                spec:
+                  execution:
+                    steps:
+                      - step:
+                          identifier: sa
+                          type: HarnessApproval
+                          spec:
+                            approvers:
+                              userGroups: <+input>
+  tags: {}
+  projectIdentifier: GitX_Remote
+  orgIdentifier: default
