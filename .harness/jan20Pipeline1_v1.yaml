@@ -20,12 +20,19 @@ template:
           template:
             templateRef: jan20Stage2
             versionLabel: v1
-      - stage:
-          name: stage3
-          identifier: stage3
-          template:
-            templateRef: febstage1
-            versionLabel: b1
+      - parallel:
+          - stage:
+              name: stage3
+              identifier: stage3
+              template:
+                templateRef: febstage1
+                versionLabel: b1
+          - stage:
+              name: stage3_1
+              identifier: stage3_1
+              template:
+                templateRef: febstage2
+                versionLabel: bw
       - stage:
           name: stage4
           identifier: stage4
