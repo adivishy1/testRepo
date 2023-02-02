@@ -1,0 +1,19 @@
+template:
+  name: febstage2
+  identifier: febstage2
+  versionLabel: bw
+  type: Stage
+  projectIdentifier: GitX_Remote
+  orgIdentifier: default
+  tags: {}
+  spec:
+    type: Custom
+    spec:
+      execution:
+        steps:
+          - step:
+              name: df
+              identifier: df
+              template:
+                templateRef: febstep2
+                versionLabel: v11
