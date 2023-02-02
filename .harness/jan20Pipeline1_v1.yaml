@@ -50,3 +50,9 @@ template:
                         spec:
                           approvers:
                             userGroups: <+input>
+      - stage:
+          name: zdsfg
+          identifier: zdsfg
+          template:
+            templateRef: febstage3
+            versionLabel: df
