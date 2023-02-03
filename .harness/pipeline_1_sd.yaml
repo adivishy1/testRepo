@@ -27,3 +27,15 @@ template:
           template:
             templateRef: stage_3
             versionLabel: vsd
+      - stage:
+          name: s4
+          identifier: s4
+          template:
+            templateRef: stage_4
+            versionLabel: vs
+      - stage:
+          name: s5
+          identifier: s5
+          template:
+            templateRef: stage_5
+            versionLabel: vs
