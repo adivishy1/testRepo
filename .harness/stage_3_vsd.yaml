@@ -1,0 +1,19 @@
+template:
+  name: stage_3
+  identifier: stage_3
+  versionLabel: vsd
+  type: Stage
+  projectIdentifier: AmitTest
+  orgIdentifier: GitXOrg
+  tags: {}
+  spec:
+    type: Custom
+    spec:
+      execution:
+        steps:
+          - step:
+              name: dsf
+              identifier: dsf
+              template:
+                templateRef: step_3
+                versionLabel: v3
