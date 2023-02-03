@@ -27,12 +27,34 @@ template:
           template:
             templateRef: stage_3
             versionLabel: vsd
-      - stage:
-          name: s4
-          identifier: s4
-          template:
-            templateRef: stage_4
-            versionLabel: vs
+      - parallel:
+          - stage:
+              name: s4
+              identifier: s4
+              template:
+                templateRef: stage_4
+                versionLabel: vs
+          - stage:
+              name: s44
+              identifier: s44
+              description: ""
+              type: Custom
+              spec:
+                execution:
+                  steps:
+                    - step:
+                        name: sss1
+                        identifier: sss1
+                        template:
+                          templateRef: step_3_v5
+                          versionLabel: v5
+                    - step:
+                        name: sss2
+                        identifier: sss2
+                        template:
+                          templateRef: step_3_v6
+                          versionLabel: v6
+              tags: {}
       - stage:
           name: s5
           identifier: s5
