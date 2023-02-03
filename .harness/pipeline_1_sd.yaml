@@ -39,3 +39,36 @@ template:
           template:
             templateRef: stage_5
             versionLabel: vs
+      - stage:
+          name: s6
+          identifier: s6
+          description: ""
+          type: Custom
+          spec:
+            execution:
+              steps:
+                - step:
+                    name: ss1
+                    identifier: ss1
+                    template:
+                      templateRef: step_6_v1
+                      versionLabel: v1
+                - step:
+                    name: ss2
+                    identifier: ss2
+                    template:
+                      templateRef: step_6_v2
+                      versionLabel: v2
+                - step:
+                    name: ss3
+                    identifier: ss3
+                    template:
+                      templateRef: step_6_v3
+                      versionLabel: v3
+                - step:
+                    name: ss4
+                    identifier: ss4
+                    template:
+                      templateRef: step_6_v4
+                      versionLabel: v4
+          tags: {}
