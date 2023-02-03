@@ -1,0 +1,19 @@
+template:
+  name: stage_2v
+  identifier: stage_2v
+  versionLabel: v2
+  type: Stage
+  projectIdentifier: AmitTest
+  orgIdentifier: GitXOrg
+  tags: {}
+  spec:
+    type: Custom
+    spec:
+      execution:
+        steps:
+          - step:
+              name: ko
+              identifier: ko
+              template:
+                templateRef: step_2
+                versionLabel: "2"
