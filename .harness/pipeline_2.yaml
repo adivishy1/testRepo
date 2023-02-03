@@ -1,0 +1,9 @@
+pipeline:
+  name: pipeline_2
+  identifier: pipeline_2
+  template:
+    templateRef: pipeline_1
+    versionLabel: sd
+  tags: {}
+  projectIdentifier: AmitTest
+  orgIdentifier: GitXOrg
