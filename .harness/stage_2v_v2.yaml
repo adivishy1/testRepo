@@ -12,8 +12,14 @@ template:
       execution:
         steps:
           - step:
-              name: ko
+              name: two
               identifier: ko
               template:
                 templateRef: step_2
                 versionLabel: "2"
+          - step:
+              name: twodot1
+              identifier: twodot1
+              template:
+                templateRef: step_2_1
+                versionLabel: v2
