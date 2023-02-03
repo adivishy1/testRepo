@@ -1,0 +1,31 @@
+template:
+  name: stage_5
+  identifier: stage_5
+  versionLabel: vs
+  type: Stage
+  projectIdentifier: AmitTest
+  orgIdentifier: GitXOrg
+  tags: {}
+  spec:
+    type: Custom
+    spec:
+      execution:
+        steps:
+          - step:
+              name: one
+              identifier: one
+              template:
+                templateRef: step_5
+                versionLabel: v3
+          - step:
+              name: two
+              identifier: two
+              template:
+                templateRef: step_5_v1
+                versionLabel: v3
+          - step:
+              name: three
+              identifier: three
+              template:
+                templateRef: step_5_v2
+                versionLabel: v3
