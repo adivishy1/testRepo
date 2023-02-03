@@ -1,0 +1,29 @@
+template:
+  name: pipeline_1
+  identifier: pipeline_1
+  versionLabel: sd
+  type: Pipeline
+  projectIdentifier: AmitTest
+  orgIdentifier: GitXOrg
+  tags: {}
+  spec:
+    stages:
+      - parallel:
+          - stage:
+              name: s1
+              identifier: s1
+              template:
+                templateRef: stage_1
+                versionLabel: v1
+          - stage:
+              name: s2
+              identifier: s2
+              template:
+                templateRef: stage_2v
+                versionLabel: v2
+      - stage:
+          name: s3
+          identifier: s3
+          template:
+            templateRef: stage_3
+            versionLabel: vsd
