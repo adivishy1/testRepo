@@ -1,0 +1,38 @@
+pipeline:
+  name: retryTestMain
+  identifier: retryTestMain
+  projectIdentifier: GitX_Remote
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: s1
+        identifier: s1
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: ShellScript
+                  name: Shell Script_1
+                  identifier: ShellScript_1
+                  spec:
+                    shell: Bash
+                    onDelegate: true
+                    source:
+                      type: Inline
+                      spec:
+                        script: |-
+                          echo 'failing test'
+                          exit 1
+                    environmentVariables: []
+                    outputVariables: []
+                  timeout: 1m
+        tags: {}
+        failureStrategies:
+          - onFailure:
+              errors:
+                - ApprovalRejection
+              action:
+                type: Abort
