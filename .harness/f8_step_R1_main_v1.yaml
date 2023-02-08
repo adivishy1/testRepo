@@ -1,0 +1,20 @@
+template:
+  name: f8_step_R1_main
+  identifier: f8_step_R1_main
+  versionLabel: v1
+  type: Step
+  projectIdentifier: GitX_Remote
+  orgIdentifier: default
+  tags: {}
+  spec:
+    timeout: 10m
+    type: ShellScript
+    spec:
+      shell: Bash
+      onDelegate: true
+      source:
+        type: Inline
+        spec:
+          script: echo "r1 main"
+      environmentVariables: []
+      outputVariables: []
