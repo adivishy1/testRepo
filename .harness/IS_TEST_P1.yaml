@@ -1,0 +1,25 @@
+pipeline:
+  name: IS_TEST_P1
+  identifier: IS_TEST_P1
+  projectIdentifier: GitX_Remote
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: s11
+        identifier: s11
+        template:
+          templateRef: IS_TEST_TEMPLATE
+          versionLabel: v1
+          templateInputs:
+            type: Approval
+            spec:
+              execution:
+                steps:
+                  - step:
+                      identifier: s1
+                      type: HarnessApproval
+                      spec:
+                        approvers:
+                          minimumCount: <+input>
+                          userGroups: <+input>
