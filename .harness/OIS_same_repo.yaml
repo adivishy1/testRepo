@@ -1,0 +1,10 @@
+overlayInputSet:
+  name: OIS same repo
+  identifier: OIS_same_repo
+  orgIdentifier: default
+  projectIdentifier: GitX_Remote
+  pipelineIdentifier: IS_TEST_P1
+  inputSetReferences:
+    - Diffrepo
+    - sameAsPipeline
+  tags: {}
