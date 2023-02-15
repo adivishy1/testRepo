@@ -1,5 +1,6 @@
 inputSet:
   name: dsds
+  tags: {}
   identifier: dsds
   orgIdentifier: default
   projectIdentifier: GitX_Remote
@@ -13,7 +14,7 @@ inputSet:
             execution:
               steps:
                 - step:
-                    identifier: d
+                    identifier: ddd
                     type: HarnessApproval
                     spec:
                       approvers:
