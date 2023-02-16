@@ -1,0 +1,23 @@
+inputSet:
+  name: isSameRepooo
+  identifier: isSameRepooo
+  orgIdentifier: default
+  projectIdentifier: GitX_Remote
+  pipeline:
+    identifier: isTemplatePipeline1
+    stages:
+      - stage:
+          identifier: d
+          template:
+            templateInputs:
+              type: Approval
+              spec:
+                execution:
+                  steps:
+                    - step:
+                        identifier: dfs
+                        type: HarnessApproval
+                        spec:
+                          approvers:
+                            userGroups:
+                              - account.testUserGroup2
