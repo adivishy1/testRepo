@@ -1,0 +1,21 @@
+inputSet:
+  name: dsds1111
+  identifier: dsds1111
+  orgIdentifier: default
+  projectIdentifier: GitX_Remote
+  pipeline:
+    identifier: inputSetPipeline1
+    stages:
+      - stage:
+          identifier: s
+          type: Approval
+          spec:
+            execution:
+              steps:
+                - step:
+                    identifier: d
+                    type: HarnessApproval
+                    spec:
+                      approvers:
+                        userGroups:
+                          - account.testUserGroup2
