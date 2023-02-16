@@ -1,0 +1,22 @@
+inputSet:
+  name: isTestRepo
+  identifier: isTestRepo
+  orgIdentifier: default
+  projectIdentifier: GitX_Remote
+  pipeline:
+    identifier: isTemplatePipelineND
+    stages:
+      - stage:
+          identifier: a
+          template:
+            templateInputs:
+              type: Approval
+              spec:
+                execution:
+                  steps:
+                    - step:
+                        identifier: sdf
+                        type: HarnessApproval
+                        spec:
+                          approvers:
+                            userGroups: <+input>
