@@ -1,0 +1,9 @@
+overlayInputSet:
+  name: osTEstRepo1
+  identifier: osTEstRepo1
+  orgIdentifier: default
+  projectIdentifier: GitX_Remote
+  pipelineIdentifier: isTemplatePipelineND
+  inputSetReferences:
+    - isTestRepo
+  tags: {}
