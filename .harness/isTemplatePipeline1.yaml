@@ -1,0 +1,24 @@
+pipeline:
+  name: isTemplatePipeline1
+  identifier: isTemplatePipeline1
+  projectIdentifier: GitX_Remote
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: d
+        identifier: d
+        template:
+          templateRef: isStagev
+          versionLabel: 1v1
+          templateInputs:
+            type: Approval
+            spec:
+              execution:
+                steps:
+                  - step:
+                      identifier: dfs
+                      type: HarnessApproval
+                      spec:
+                        approvers:
+                          userGroups: <+input>
