@@ -1,5 +1,6 @@
 inputSet:
   name: dsds11
+  tags: {}
   identifier: dsds11
   orgIdentifier: default
   projectIdentifier: GitX_Remote
@@ -7,7 +8,7 @@ inputSet:
     identifier: inputSetPipeline1
     stages:
       - stage:
-          identifier: s
+          identifier: s11
           type: Approval
           spec:
             execution:
