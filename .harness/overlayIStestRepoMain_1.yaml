@@ -1,0 +1,10 @@
+overlayInputSet:
+  name: overlayIStestRepoMain_1
+  identifier: overlayIStestRepoMain_1
+  orgIdentifier: default
+  projectIdentifier: GitX_Remote
+  pipelineIdentifier: pipelineP1DemoRepo
+  inputSetReferences:
+    - demoRepoIS
+    - testRepoMain
+  tags: {}
