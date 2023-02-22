@@ -1,6 +1,8 @@
 inputSet:
   name: inputSetTestRepoMain
+  tags: {}
   identifier: inputSetTestRepoMain
+  description: editing
   orgIdentifier: default
   projectIdentifier: GitX_Remote
   pipeline:
