@@ -1,6 +1,8 @@
 inputSet:
   name: inputSetTestRepoMain
+  tags: {}
   identifier: inputSetTestRepoMain
+  description: editing
   orgIdentifier: default
   projectIdentifier: GitX_Remote
   pipeline:
@@ -20,4 +22,5 @@ inputSet:
                         spec:
                           approvers:
                             userGroups:
-                              - account.testUserGroup2
+                              - account.testUserGroup
+                              - account._account_all_users
