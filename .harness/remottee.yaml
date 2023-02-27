@@ -1,0 +1,31 @@
+pipeline:
+  name: remottee
+  identifier: remottee
+  projectIdentifier: TestAmit
+  orgIdentifier: Simlified_Git_sync
+  tags: {}
+  stages:
+    - stage:
+        name: afds
+        identifier: afds
+        description: ""
+        type: Approval
+        spec:
+          execution:
+            steps:
+              - step:
+                  name: fads
+                  identifier: fads
+                  type: HarnessApproval
+                  timeout: 1d
+                  spec:
+                    approvalMessage: |-
+                      Please review the following information
+                      and approve the pipeline progression
+                    includePipelineExecutionHistory: true
+                    approvers:
+                      minimumCount: 1
+                      disallowPipelineExecutor: false
+                      userGroups: <+input>
+                    approverInputs: []
+        tags: {}
