@@ -1,0 +1,21 @@
+inputSet:
+  name: dfssafv23424
+  identifier: dfssafv23424
+  orgIdentifier: default
+  projectIdentifier: GitX_Remote
+  pipeline:
+    identifier: remoteasdgsdfsdf
+    stages:
+      - stage:
+          identifier: af
+          type: Approval
+          spec:
+            execution:
+              steps:
+                - step:
+                    identifier: asf
+                    type: HarnessApproval
+                    spec:
+                      approvers:
+                        userGroups:
+                          - account.testUserGroup2
