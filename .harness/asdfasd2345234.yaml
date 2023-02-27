@@ -1,0 +1,21 @@
+inputSet:
+  name: asdfasd2345234
+  identifier: asdfasd2345234
+  orgIdentifier: Simlified_Git_sync
+  projectIdentifier: TestAmit
+  pipeline:
+    identifier: remottee
+    stages:
+      - stage:
+          identifier: afds
+          type: Approval
+          spec:
+            execution:
+              steps:
+                - step:
+                    identifier: fads
+                    type: HarnessApproval
+                    spec:
+                      approvers:
+                        userGroups:
+                          - account._account_all_users
