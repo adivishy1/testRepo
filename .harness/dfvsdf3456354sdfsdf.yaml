@@ -1,0 +1,9 @@
+overlayInputSet:
+  name: dfvsdf3456354sdfsdf
+  identifier: dfvsdf3456354sdfsdf
+  orgIdentifier: Simlified_Git_sync
+  projectIdentifier: TestAmit
+  pipelineIdentifier: remottee
+  inputSetReferences:
+    - asdfasd2345234
+  tags: {}
