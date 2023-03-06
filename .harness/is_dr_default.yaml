@@ -1,0 +1,21 @@
+inputSet:
+  name: is_dr_default
+  identifier: is_dr_default
+  orgIdentifier: Simlified_Git_sync
+  projectIdentifier: TestAmit
+  pipeline:
+    identifier: testPipelineTriggerspreQa
+    stages:
+      - stage:
+          identifier: asd
+          type: Approval
+          spec:
+            execution:
+              steps:
+                - step:
+                    identifier: asdf
+                    type: HarnessApproval
+                    spec:
+                      approvers:
+                        userGroups:
+                          - account._account_all_users
