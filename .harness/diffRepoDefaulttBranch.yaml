@@ -1,0 +1,22 @@
+inputSet:
+  name: diffRepoDefaulttBranch
+  identifier: diffRepoDefaulttBranch
+  description: test repo, main
+  orgIdentifier: default
+  projectIdentifier: GitX_Remote
+  pipeline:
+    identifier: test1_trigger
+    stages:
+      - stage:
+          identifier: asdf
+          type: Approval
+          spec:
+            execution:
+              steps:
+                - step:
+                    identifier: dsafasd
+                    type: HarnessApproval
+                    spec:
+                      approvers:
+                        userGroups:
+                          - account.testUserGroup2
