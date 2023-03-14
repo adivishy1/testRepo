@@ -1,0 +1,30 @@
+pipeline:
+  name: childRepo2MainBranch
+  identifier: childRepo2MainBranch
+  projectIdentifier: AmitTest
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: custom2
+        identifier: custom2
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: ShellScript
+                  name: ShellScript_1
+                  identifier: ShellScript_1
+                  spec:
+                    shell: Bash
+                    onDelegate: true
+                    source:
+                      type: Inline
+                      spec:
+                        script: echo "bcd"
+                    environmentVariables: []
+                    outputVariables: []
+                  timeout: 10m
+        tags: {}
