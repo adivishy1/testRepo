@@ -1,0 +1,13 @@
+pipeline:
+  name: testREpoo
+  identifier: testREpoo
+  projectIdentifier: GitX_Remote
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: s
+        identifier: s
+        template:
+          templateRef: stageDemoMain
+          versionLabel: v2
