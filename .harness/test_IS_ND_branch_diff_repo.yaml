@@ -1,0 +1,21 @@
+inputSet:
+  name: test IS ND branch diff repo
+  identifier: test_IS_ND_branch_diff_repo
+  orgIdentifier: default
+  projectIdentifier: GitX_Remote
+  pipeline:
+    identifier: test_is_p1
+    stages:
+      - stage:
+          identifier: ds
+          type: Approval
+          spec:
+            execution:
+              steps:
+                - step:
+                    identifier: fds
+                    type: HarnessApproval
+                    spec:
+                      approvers:
+                        userGroups:
+                          - account._account_all_users
