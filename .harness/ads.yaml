@@ -6,7 +6,7 @@ pipeline:
   tags: {}
   stages:
     - stage:
-        name: fads
+        name: fadssad
         identifier: fads
         description: ""
         type: Approval
