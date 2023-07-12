@@ -1,0 +1,21 @@
+inputSet:
+  name: input set diff repo123
+  identifier: input_set_diff_repo123
+  orgIdentifier: default
+  projectIdentifier: AmitTest
+  pipeline:
+    identifier: test_pipeline_and_input_set_diff
+    stages:
+      - stage:
+          identifier: sdfads
+          type: Approval
+          spec:
+            execution:
+              steps:
+                - step:
+                    identifier: asdf
+                    type: HarnessApproval
+                    spec:
+                      approvers:
+                        userGroups:
+                          - account._account_all_users
