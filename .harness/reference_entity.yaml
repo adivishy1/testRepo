@@ -1,0 +1,24 @@
+pipeline:
+  name: reference entity
+  identifier: reference_entity
+  projectIdentifier: shalinitest
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: fd
+        identifier: fd
+        template:
+          templateRef: stage_template_1_default
+          versionLabel: v2
+          templateInputs:
+            type: Approval
+            spec:
+              execution:
+                steps:
+                  - step:
+                      identifier: vd
+                      type: HarnessApproval
+                      spec:
+                        approvers:
+                          userGroups: <+input>
