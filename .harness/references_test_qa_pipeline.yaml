@@ -1,0 +1,24 @@
+pipeline:
+  name: references test qa pipeline
+  identifier: references_test_qa_pipeline
+  projectIdentifier: adithyaGitX
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: asd
+        identifier: asd
+        template:
+          templateRef: stage_qa_remote_pipeline
+          versionLabel: v1
+          templateInputs:
+            type: Approval
+            spec:
+              execution:
+                steps:
+                  - step:
+                      identifier: as
+                      type: HarnessApproval
+                      spec:
+                        approvers:
+                          userGroups: <+input>
