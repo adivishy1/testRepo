@@ -22,3 +22,21 @@ pipeline:
                       spec:
                         approvers:
                           userGroups: <+input>
+
+    - stage:
+        name: fd2
+        identifier: fd2
+        template:
+          templateRef: stage_template_2_default
+          versionLabel: v2
+          templateInputs:
+            type: Approval
+            spec:
+              execution:
+                steps:
+                  - step:
+                      identifier: dsvasdvadsf
+                      type: HarnessApproval
+                      spec:
+                        approvers:
+                          userGroups: <+input>                          
