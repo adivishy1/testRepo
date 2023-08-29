@@ -13,6 +13,6 @@ template:
       source:
         type: Inline
         spec:
-          script: echo "1231231"
+          script: echo "123123sdfdsa1"
       environmentVariables: []
       outputVariables: []
