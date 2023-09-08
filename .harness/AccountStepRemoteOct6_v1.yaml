@@ -1,7 +1,7 @@
 template:
   name: AccountStepRemoteOct6
   identifier: AccountStepRemoteOct6
-  versionLabel: v124
+  versionLabel: v12
   type: Step
   tags: {}
   spec:
