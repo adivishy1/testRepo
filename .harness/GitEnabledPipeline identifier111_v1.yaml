@@ -1,7 +1,7 @@
 template:
   name: GitEnabledPipelineidentifier111
   identifier: GitEnabledPipelineidentifier111
-  versionLabel: v12
+  versionLabel: v122
   type: Step
   projectIdentifier: GitX_Remote
   orgIdentifier: default
