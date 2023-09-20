@@ -14,8 +14,8 @@ pipeline:
           execution:
             steps:
               - step:
-                  name: sd12
-                  identifier: sd12
+                  name: sd1212
+                  identifier: sd1212
                   type: HarnessApproval
                   timeout: 1d
                   spec:
