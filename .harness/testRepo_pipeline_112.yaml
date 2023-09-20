@@ -14,8 +14,8 @@ pipeline:
           execution:
             steps:
               - step:
-                  name: dsf
-                  identifier: dsf
+                  name: dsfg
+                  identifier: dsfg
                   type: HarnessApproval
                   timeout: 1d
                   spec:
