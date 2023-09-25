@@ -1,9 +1,9 @@
 template:
   name: AccountStepRemoteOct6
   identifier: AccountStepRemoteOct61
-  versionLabel: v1sdfsd1
+  versionLabel: v1sdfsd
   type: Step
-  tags: {}
+  tags: {1}
   spec:
     timeout: 10m
     type: ShellScript
@@ -13,6 +13,6 @@ template:
       source:
         type: Inline
         spec:
-          script: echo "123123sdfdsa1"
+          script: echo "123123sdfdszdfgsdfgvdsa1"
       environmentVariables: []
       outputVariables: []
