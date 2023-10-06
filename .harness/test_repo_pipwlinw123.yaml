@@ -15,7 +15,7 @@ pipeline:
             steps:
               - step:
                   name: dsf
-                  identifier: dsf
+                  identifier: dsf123
                   type: HarnessApproval
                   timeout: 1d
                   spec:
