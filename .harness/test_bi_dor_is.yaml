@@ -1,0 +1,22 @@
+inputSet:
+  name: test bi dor is
+  identifier: test_bi_dor_is
+  orgIdentifier: default
+  projectIdentifier: AmitTest
+  pipeline:
+    identifier: test_bi_sync_qa
+    stages:
+      - stage:
+          identifier: asd
+          type: Approval
+          spec:
+            execution:
+              steps:
+                - step:
+                    identifier: sad
+                    type: HarnessApproval
+                    spec:
+                      approvers:
+                        minimumCount: 1
+                        userGroups:
+                          - account._account_all_users
