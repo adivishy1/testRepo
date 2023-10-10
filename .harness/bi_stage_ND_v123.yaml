@@ -15,7 +15,7 @@ template:
               name: dfgdfs
               identifier: dfgdfs
               type: HarnessApproval
-              timeout: 1d
+              timeout: <+input>
               spec:
                 approvalMessage: |-
                   Please review the following informationd
