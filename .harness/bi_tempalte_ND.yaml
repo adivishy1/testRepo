@@ -1,0 +1,13 @@
+pipeline:
+  name: bi tempalte ND
+  identifier: bi_tempalte_ND
+  projectIdentifier: GitX_Remote
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: sdf
+        identifier: sdf
+        template:
+          templateRef: bi_stage_ND
+          versionLabel: v123
