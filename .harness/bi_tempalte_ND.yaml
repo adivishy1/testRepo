@@ -11,3 +11,14 @@ pipeline:
         template:
           templateRef: bi_stage_ND
           versionLabel: v123
+          templateInputs:
+            type: Approval
+            spec:
+              execution:
+                steps:
+                  - step:
+                      identifier: dfgdfs
+                      type: HarnessApproval
+                      spec:
+                        approvers:
+                          minimumCount: <+input>
