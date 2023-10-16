@@ -1,0 +1,32 @@
+pipeline:
+  name: bi dir sync test pipeline1
+  identifier: bi_dir_sync_test_pipeline1
+  projectIdentifier: AmitGitX
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: sdf
+        identifier: sdf
+        description: ""
+        type: Approval
+        spec:
+          execution:
+            steps:
+              - step:
+                  name: fs
+                  identifier: fs
+                  type: HarnessApproval
+                  timeout: 1d
+                  spec:
+                    approvalMessage: |-
+                      Please review the following information
+                      and approve the pipeline progression
+                    includePipelineExecutionHistory: true
+                    approvers:
+                      minimumCount: 1
+                      disallowPipelineExecutor: false
+                      userGroups: <+input>
+                    isAutoRejectEnabled: false
+                    approverInputs: []
+        tags: {}
