@@ -1,0 +1,24 @@
+pipeline:
+  name: 17 oct test tempalte p1
+  identifier: _oct_test_tempalte_p1
+  projectIdentifier: AmitTest
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: asd
+        identifier: asd
+        template:
+          templateRef: oct_17_stage_test_bi
+          versionLabel: v1
+          templateInputs:
+            type: Approval
+            spec:
+              execution:
+                steps:
+                  - step:
+                      identifier: fds
+                      type: HarnessApproval
+                      spec:
+                        approvers:
+                          userGroups: <+input>
