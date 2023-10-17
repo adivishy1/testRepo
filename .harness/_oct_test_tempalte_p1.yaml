@@ -21,4 +21,5 @@ pipeline:
                       type: HarnessApproval
                       spec:
                         approvers:
+                          minimumCount: <+input>
                           userGroups: <+input>
