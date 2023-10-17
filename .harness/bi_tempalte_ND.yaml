@@ -17,7 +17,7 @@ pipeline:
               execution:
                 steps:
                   - step:
-                      identifier: identifiter1
+                      identifier: identifiter1dg
                       type: HarnessApproval
                       timeout: <+input>
                       spec:
