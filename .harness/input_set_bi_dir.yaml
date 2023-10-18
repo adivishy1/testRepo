@@ -1,0 +1,22 @@
+inputSet:
+  name: input set bi dir
+  identifier: input_set_bi_dir
+  orgIdentifier: default
+  projectIdentifier: GitX_Remote
+  pipeline:
+    identifier: test_bi_ND
+    stages:
+      - stage:
+          identifier: fds
+          type: Approval
+          spec:
+            execution:
+              steps:
+                - step:
+                    identifier: sdf
+                    type: HarnessApproval
+                    spec:
+                      approvers:
+                        minimumCount: 1
+                        userGroups:
+                          - account._account_all_users
