@@ -1,0 +1,9 @@
+overlayInputSet:
+  name: over laay is bi
+  identifier: over_laay_is_bi
+  orgIdentifier: default
+  projectIdentifier: GitX_Remote
+  pipelineIdentifier: test_bi_ND
+  inputSetReferences:
+    - input_set_bi_dir
+  tags: {}
