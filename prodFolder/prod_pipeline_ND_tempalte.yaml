@@ -1,0 +1,24 @@
+pipeline:
+  name: prod pipeline ND tempalte
+  identifier: prod_pipeline_ND_tempalte
+  projectIdentifier: TestGitSync
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: asdfasd
+        identifier: asdfasd
+        template:
+          templateRef: prod_ND_stage1
+          versionLabel: vsd
+          templateInputs:
+            type: Approval
+            spec:
+              execution:
+                steps:
+                  - step:
+                      identifier: sdfsdf
+                      type: HarnessApproval
+                      spec:
+                        approvers:
+                          userGroups: <+input>
