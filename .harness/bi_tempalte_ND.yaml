@@ -19,7 +19,7 @@ pipeline:
                   - step:
                       identifier: dfgdfs
                       type: HarnessApproval
-                      timeout: <+input>
+                      timeout: 10m
                       spec:
                         approvers:
                           minimumCount: <+input>
