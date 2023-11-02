@@ -17,7 +17,7 @@ pipeline:
               execution:
                 steps:
                   - step:
-                      identifier: dfgdfsv7
+                      identifier: dfgd
                       type: HarnessApproval
                       timeout: 10m
                       spec:
