@@ -1,0 +1,32 @@
+pipeline:
+  name: dec7MainPatchPipeline
+  identifier: dec7MainPatchPipeline
+  projectIdentifier: GitX_Remote
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: a
+        identifier: a
+        description: ""
+        type: Approval
+        spec:
+          execution:
+            steps:
+              - step:
+                  name: sa
+                  identifier: sa
+                  type: HarnessApproval
+                  timeout: 1d
+                  spec:
+                    approvalMessage: |-
+                      Please review the following information
+                      and approve the pipeline progression
+                    includePipelineExecutionHistory: true
+                    approvers:
+                      minimumCount: 1
+                      disallowPipelineExecutor: false
+                      userGroups:
+                        - account.testUserGroup2
+                    approverInputs: []
+        tags: {}
