@@ -1,0 +1,25 @@
+template:
+  name: stage a2 tempalte
+  identifier: stage_a2_tempalte
+  versionLabel: v23
+  type: Stage
+  tags: {}
+  spec:
+    type: Approval
+    spec:
+      execution:
+        steps:
+          - step:
+              type: ShellScript
+              name: ShellScript_1
+              identifier: ShellScript_1
+              spec:
+                shell: Bash
+                onDelegate: true
+                source:
+                  type: Inline
+                  spec:
+                    script: echo 1
+                environmentVariables: []
+                outputVariables: []
+              timeout: 10m
