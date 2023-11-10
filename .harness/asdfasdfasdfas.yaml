@@ -6,19 +6,27 @@ pipeline:
   tags: {}
   stages:
     - stage:
-        name: sadf
-        identifier: sadf
-        template:
-          templateRef: test_inline_template1231231231231
-          versionLabel: vsd
-          templateInputs:
-            type: Approval
-            spec:
-              execution:
-                steps:
-                  - step:
-                      identifier: adsf
-                      type: HarnessApproval
-                      spec:
-                        approvers:
-                          userGroups: <+input>
+        name: asd
+        identifier: asd
+        description: ""
+        type: Approval
+        spec:
+          execution:
+            steps:
+              - step:
+                  name: asd
+                  identifier: asd
+                  type: HarnessApproval
+                  timeout: 1d
+                  spec:
+                    approvalMessage: |-
+                      Please review the following information
+                      and approve the pipeline progression
+                    includePipelineExecutionHistory: true
+                    approvers:
+                      minimumCount: 1
+                      disallowPipelineExecutor: false
+                      userGroups: <+input>
+                    isAutoRejectEnabled: false
+                    approverInputs: []
+        tags: {}
