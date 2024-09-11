@@ -15,11 +15,11 @@ template:
               identifier: ShellScript_1
               spec:
                 shell: Bash
-                onDelegate: true
                 source:
                   type: Inline
                   spec:
                     script: echo 1
                 environmentVariables: []
                 outputVariables: []
-              timeout: 10m
+                executionTarget: {}
+              timeout: 12m
