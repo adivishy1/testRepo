@@ -1,0 +1,25 @@
+pipeline:
+  name: kjgfkhjvljhvljhlhjgl
+  identifier: kjgfkhjvljhvljhlhjgl
+  projectIdentifier: test_adithya
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: mjn
+        identifier: mjn
+        tags: {}
+        template:
+          templateRef: test_inline_template2
+          versionLabel: v2
+          templateInputs:
+            type: Approval
+            spec:
+              execution:
+                steps:
+                  - step:
+                      identifier: sdf
+                      type: HarnessApproval
+                      spec:
+                        approvers:
+                          userGroups: <+input>
