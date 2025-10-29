@@ -1,0 +1,21 @@
+inputSet:
+  name: demo inputset
+  identifier: demo_inputset
+  orgIdentifier: organization1
+  projectIdentifier: demoproject
+  pipeline:
+    identifier: Demo_pipeline
+    stages:
+      - stage:
+          identifier: stage1
+          type: Approval
+          spec:
+            execution:
+              steps:
+                - step:
+                    identifier: s1
+                    type: HarnessApproval
+                    spec:
+                      approvers:
+                        userGroups:
+                          - account._account_all_users
