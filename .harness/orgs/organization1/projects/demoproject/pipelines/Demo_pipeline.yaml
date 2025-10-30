@@ -30,3 +30,18 @@ pipeline:
                     isAutoRejectEnabled: false
                     approverInputs: []
         tags: {}
+    - stage:
+        name: stage2
+        identifier: stage2
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  name: test
+                  identifier: test
+                  template:
+                    templateRef: teststeptemplate
+                    versionLabel: v1
+        tags: {}
