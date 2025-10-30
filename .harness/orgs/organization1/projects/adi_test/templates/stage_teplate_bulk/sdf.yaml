@@ -1,0 +1,19 @@
+template:
+  name: stage teplate bulk
+  identifier: stage_teplate_bulk
+  versionLabel: sdf
+  type: Stage
+  projectIdentifier: adi_test
+  orgIdentifier: organization1
+  tags: {}
+  spec:
+    type: Custom
+    spec:
+      execution:
+        steps:
+          - step:
+              name: sd
+              identifier: sd
+              template:
+                templateRef: step_tempaltes_bulk
+                versionLabel: v1
