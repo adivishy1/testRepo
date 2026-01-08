@@ -1,0 +1,21 @@
+inputSet:
+  name: is22
+  identifier: is22
+  orgIdentifier: abcdef
+  projectIdentifier: AmitTest
+  pipeline:
+    identifier: testRepo
+    stages:
+      - stage:
+          identifier: sdf
+          type: Approval
+          spec:
+            execution:
+              steps:
+                - step:
+                    identifier: adfs
+                    type: HarnessApproval
+                    spec:
+                      approvers:
+                        userGroups:
+                          - account._account_all_users
