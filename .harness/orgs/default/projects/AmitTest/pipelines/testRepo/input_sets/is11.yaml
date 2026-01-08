@@ -1,0 +1,21 @@
+inputSet:
+  name: is11
+  identifier: is11
+  orgIdentifier: default
+  projectIdentifier: AmitTest
+  pipeline:
+    identifier: testRepo
+    stages:
+      - stage:
+          identifier: sdf
+          type: Approval
+          spec:
+            execution:
+              steps:
+                - step:
+                    identifier: adfs
+                    type: HarnessApproval
+                    spec:
+                      approvers:
+                        userGroups:
+                          - account._account_all_users
